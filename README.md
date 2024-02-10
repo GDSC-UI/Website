@@ -1,11 +1,11 @@
 
-![Google_for_Developers_logomark_color](https://github.com/GDSC-UI/Website/assets/103947598/1e462425-e935-44e4-a9ee-319246d1234d)
+![Google_for_Developers_logomark_color](https://github.com/GDSC-UI/Website/assets/103947598/ec9599c0-a20c-4003-9332-f6fc7dec6f3a)
 
-<p align="center">
+
+
 
 # GDSC UI
 
-</p>
 
 <p align="center">
 
@@ -67,7 +67,4 @@ GDSC UI aims to build a problem-solving mindset in students. We share our story,
 
 </p>
 
-I used HTML <p> tags with align="center" to center each paragraph. Let me know if you would like anything adjusted!
-- Team profiles
-- Contact page
 
