@@ -1,0 +1,122 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { useRef, useState } from "react";
+import style from "./Header.module.css";
+import Button from "@/components/ui/Button";
+
+const Header = () => {
+  const headerRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+  return (
+    <div className="fixed top-0 right-0 left-0 z-20">
+      <header
+        ref={headerRef}
+        className={`hidden lg:flex px-28 justify-between  items-center py-6  w-full
+       bg-white`}
+      >
+        <Link href="/">
+          <div className="w-32 h-12 bg-black"></div>
+        </Link>
+
+        <div className="flex gap-10">
+          <Link href="/" className="text-black text-base font-light">
+            About Us
+          </Link>
+          <Link href="/about" className="text-black text-base font-light">
+            Events
+          </Link>
+          <Link href="/contact" className="text-black text-base font-light">
+            Programs
+          </Link>
+          <div className="dropdown z-50">
+            <button className="dropbtn">
+              More
+              <Image
+                width={15}
+                height={20}
+                src={"./arrow-down.svg"}
+                alt="arrow down"
+                className="inline-flex"
+              />
+            </button>
+            <div className="dropdown-content shadow-lg bg-white rounded-lg left-50">
+              <Link href="/about" className="text-black text-base font-light">
+                About Us
+              </Link>
+              <Link href="/about" className="text-black text-base font-light">
+                Events
+              </Link>
+              <Link href="/contact" className="text-black text-base font-light">
+                Programs
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <Button
+          variant="primary"
+          className="w-36 md:w-[196px] h-14 font-medium inline-block"
+        >
+          Join GDSC UNIBAN
+        </Button>
+      </header>
+
+      {/**Mobile */}
+      <header
+        ref={headerRef}
+        className={`flex lg:hidden justify-between items-center relative py-3 px-5  w-full `}
+      >
+        <Link href="/">
+          <Image
+            src="/svgs/logo.svg"
+            alt="brails Logo"
+            width={100}
+            height={30}
+          />
+        </Link>
+
+        {visible ? (
+          <div
+            className={`${
+              visible ? style.drop_visible : ""
+            } transition-all duration-300 bg-white z-50 lg:bg-transparent shadow-lg lg:shadow-none 
+                          px-6 lg:px-0 py-10 lg:py-0 w-full lg:w-auto absolute left-0 top-14 md:top-28 lg:top-0 lg:static  flex-col 
+                          lg:flex-row justify-between lg:items-center lg:space-x-24`}
+          >
+            <ul className="flex flex-col gap-8 lg:flex-row space-y-4 lg:space-y-0">
+              <Link href="/" className="text-black text-base font-light">
+                About Us
+              </Link>
+              <Link href="/about" className="text-black text-base font-light">
+                Events
+              </Link>
+              <Link href="/contact" className="text-black text-base font-light">
+                Programs
+              </Link>
+            </ul>
+          </div>
+        ) : null}
+
+        <div className="flex justify-between items-center">
+          <button
+            onClick={() => setVisible(!visible)}
+            tabIndex={0}
+            aria-label="menu button"
+            role="button"
+            className={`
+                          appearance-none outline-none text-3xl md:text-4xl lg:hidden 
+                          cursor-default transition-all duration-300 hover:opacity-70 
+                          focus:ring-2 focus:ring-offset-2  bg-blue-primary
+                          rounded-lg p-2 md:p-1 flex justify-center items-center box-border w-9 h-9
+                          md:h-12 md:w-16`}
+          >
+            ha
+          </button>
+        </div>
+      </header>
+    </div>
+  );
+};
+
+export default Header;
