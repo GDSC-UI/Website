@@ -1,7 +1,5 @@
-<img src="![Google_for_Developers_logomark_color](https://github.com/GDSC-UI/Website/assets/103947598/490413b9-3fad-444b-830c-010f1036f09b)" alt="..." width="50" height="50">
 
-
-Here is the text centered in the README.md file:
+![Google_for_Developers_logomark_color](https://github.com/GDSC-UI/Website/assets/103947598/1e462425-e935-44e4-a9ee-319246d1234d)
 
 <p align="center">
 
