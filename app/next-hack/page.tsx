@@ -1,14 +1,16 @@
-import { FlexContainer } from "@/components/ui/flex-container";
-import { Section } from "@/components/ui/section";
+import { FlexContainer } from "@/components/ui/flex-container"
+import { Section } from "@/components/ui/section"
+
+export const metadata = {
+  title: `Next Hack`,
+}
 
 export default function Page() {
   return (
     <div>
-      <FlexContainer
-        heading="next hack"
-        period={new Date().toDateString()}
-        buttonText="Register now"
-      />
+      <FlexContainer heading="next hack" period={new Date().toDateString()}>
+        Register now
+      </FlexContainer>
       <Section
         content="what area/problem are you focusing on"
         heading="Theme & Challenges"
@@ -69,5 +71,5 @@ export default function Page() {
         <div className="h-[400px] border border-black"></div>
       </Section>
     </div>
-  );
+  )
 }

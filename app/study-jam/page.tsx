@@ -1,15 +1,17 @@
-import Button from "@/components/ui/Button";
-import { FlexContainer } from "@/components/ui/flex-container";
-import { Section } from "@/components/ui/section";
+import Button from "@/components/ui/Button"
+import { FlexContainerWithButton } from "@/components/ui/flex-container"
+import { Section } from "@/components/ui/section"
+
+export const metadata = {
+  title: `Study Jam`,
+}
 
 export default function Page() {
   return (
-    <div className="">
-      <FlexContainer
-        heading="study jam"
-        period="Weekly"
-        buttonText="Join now"
-      />
+    <div>
+      <FlexContainerWithButton heading="study jam" period="Weekly">
+        Join now
+      </FlexContainerWithButton>
       <Section content="What do  we do?" heading="how it works?">
         <p>
           Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
@@ -42,7 +44,7 @@ export default function Page() {
         <Button className="uppercase inline-block">See more</Button>
       </Section>
     </div>
-  );
+  )
 }
 
 function Card() {
@@ -59,7 +61,7 @@ function Card() {
         <p>Read more</p>
       </div>
     </div>
-  );
+  )
 }
 
 function CardsView() {
@@ -69,5 +71,5 @@ function CardsView() {
         <Card key={num} />
       ))}
     </main>
-  );
+  )
 }
