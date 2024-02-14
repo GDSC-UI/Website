@@ -5,11 +5,11 @@ const Hero = () => {
     <div className="flex flex-wrap-reverse p-6 md:p-28 items-center gap-5 bg-lightblue">
       <div className="left max-w-2xl">
         <h1 className="font-bold font-primary text-3xl md:text-6xl">
-          Leadership is for every young person
+        Tech is for every young person
         </h1>
         <p className="text-black font-light  font-primary text-base pt-4 max-w-xl">
-          Take part in one of our programs abroad, in your city, or virtually.
-          Start your leadership journey with AIESEC.
+          Join and grow your skills  in your school, or virtually.
+          Kickstart your career journey with GDSCUI.
         </p>
         <Button
           variant="primary"
