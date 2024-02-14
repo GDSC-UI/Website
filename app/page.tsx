@@ -1,7 +1,11 @@
 import ExploreEvents from "@/components/homepage/events";
 import Hero from "@/components/homepage/hero";
 import Programmes from "@/components/homepage/programs";
+import PartnerSponsors from "@/components/homepage/partners-sponsors";
 import HowWeHelp from "@/components/shared/how-we-help";
+import FAQS from "@/components/homepage/faqs";
+import Organizers from "@/components/homepage/organizers";
+import Gallery from "@/components/homepage/organizers/gallery";
 
 export default function Home() {
   return (
@@ -17,6 +21,10 @@ export default function Home() {
       />
       <Programmes/>
       <ExploreEvents/>
+      <PartnerSponsors/>
+      <FAQS/>
+      <Organizers/>
+      <Gallery/>
     </section>
   );
 }

@@ -67,13 +67,8 @@ const Header = () => {
         ref={headerRef}
         className={`flex lg:hidden justify-between items-center relative py-3 px-5  w-full `}
       >
-        <Link href="/">
-          <Image
-            src="/svgs/logo.svg"
-            alt="brails Logo"
-            width={100}
-            height={30}
-          />
+         <Link href="/">
+          <div className="w-36 h-12 bg-black"></div>
         </Link>
 
         {visible ? (
@@ -84,21 +79,21 @@ const Header = () => {
                           px-6 lg:px-0 py-10 lg:py-0 w-full lg:w-auto absolute left-0 top-14 md:top-28 lg:top-0 lg:static  flex-col 
                           lg:flex-row justify-between lg:items-center lg:space-x-24`}
           >
-            <ul className="flex flex-col gap-8 lg:flex-row space-y-4 lg:space-y-0">
-              <Link href="/" className="text-black text-base font-light">
+            <ul className="flex flex-col gap-6 lg:flex-row space-y-2 lg:space-y-0">
+              <Link href="/" className="text-black text-base font-medium">
                 About Us
               </Link>
-              <Link href="/about" className="text-black text-base font-light">
+              <Link href="/" className="text-black text-base font-medium">
                 Events
               </Link>
-              <Link href="/contact" className="text-black text-base font-light">
+              <Link href="/" className="text-black text-base font-medium">
                 Programs
               </Link>
             </ul>
           </div>
         ) : null}
 
-        <div className="flex justify-between items-center">
+      
           <button
             onClick={() => setVisible(!visible)}
             tabIndex={0}
@@ -107,13 +102,12 @@ const Header = () => {
             className={`
                           appearance-none outline-none text-3xl md:text-4xl lg:hidden 
                           cursor-default transition-all duration-300 hover:opacity-70 
-                          focus:ring-2 focus:ring-offset-2  bg-blue-primary
+                          focus:ring-2 focus:ring-offset-2  bg-blue
                           rounded-lg p-2 md:p-1 flex justify-center items-center box-border w-9 h-9
                           md:h-12 md:w-16`}
           >
-            ha
           </button>
-        </div>
+
       </header>
     </div>
   );

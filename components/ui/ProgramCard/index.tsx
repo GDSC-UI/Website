@@ -4,19 +4,17 @@ interface ProgramCardProps {
   title: string;
   description: string;
   route: string;
-  date?: Date;
+  classnames?: any;
 }
-const ProgramCard = ({ title, description, route, date }: ProgramCardProps) => {
+const ProgramCard = ({ title, description, route, classnames }: ProgramCardProps) => {
   return (
-    <div className="w-[550px] bg-white">
-      <div className="bg-lightgrey w-[550px] h-[250px]"></div>
+    <div className={`w-full md:w-[36.5rem] bg-white ${classnames}`}>
+      <div className="bg-lightgrey w-full h-[254px]"></div>
       <div className="p-5">
-        <p className="text-blue font-primary font-light">
-          Upcoming {new Date().toLocaleDateString()}
-        </p>
+   
         <h3 className="font-bold font-primary pt-5 text-2xl">{title}</h3>
-        <p className="font-primary font-light pt-5">{description}</p>
-        <Link href={route} className="font-primary font-normal text-base mt-4">
+        <p className="font-primary font-light py-5">{description}</p>
+        <Link href={route} className="font-primary font-normal text-base pt-8 hover:text-blue duration-100 transition-all">
           Read more
         </Link>
       </div>
