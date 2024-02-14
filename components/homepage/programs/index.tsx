@@ -3,8 +3,8 @@ import ProgramCard from "@/components/ui/ProgramCard";
 const Programmes = () => {
   return (
     <section className="bg-lightblue px-28 py-20">
-      <h3 className="font-primary text-5xl text-center">Our Programmes</h3>
-      <p className="font-light text-center mx-auto pt-5 max-w-3xl">
+      <h3 className="text-5xl text-center">Our Programmes</h3>
+      <p className="text-center mx-auto pt-5 max-w-3xl">
         Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
         enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum
         luctus eget eu.
