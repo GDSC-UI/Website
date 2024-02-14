@@ -2,30 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
 
-@font-face {
-  font-family: "Product Sans Regular";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../public/fonts/productSans/ProductSans-Light.woff") format("woff");
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@font-face {
-  font-family: "Product Sans Regular";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../public/fonts/productSans/ProductSans-Regular.woff")
-    format("woff");
-}
+  h1,
+  h2,
+  h3 {
+    @apply font-bold
+  }
 
-@font-face {
-  font-family: "Product Sans Regular";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../public/fonts/productSans/ProductSans-Bold.woff") format("woff");
+  h1 {
+    @apply text-[3.5rem] leading-[4.5rem]
+  }
+
+  h2 {
+    @apply text-5xl
+  }
 }
 
 .dropdown {
