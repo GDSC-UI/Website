@@ -9,7 +9,7 @@ import Gallery from "@/components/homepage/organizers/gallery";
 
 export default function Home() {
   return (
-    <section>
+    <section className="font-bold">
       <Hero />
       <HowWeHelp
         textOne="  Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
