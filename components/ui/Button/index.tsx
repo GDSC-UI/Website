@@ -4,7 +4,7 @@ import React from "react";
 interface Props {
   children?: React.ReactNode;
   className?: string;
-  variant?: "default" | "primary" | "transparent" | "filter";
+  variant?: "default" | "primary" | "transparent" | "filter"| "outline";
   isLoading?: boolean;
   asLink?: string;
   onClick?: () => void;

@@ -41,6 +41,7 @@ export default function RootLayout({
         <main className="container mx-auto max-w-full pt-24 flex-grow">
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );

@@ -12,7 +12,7 @@ const Header = () => {
     <div className="fixed top-0 right-0 left-0 z-20">
       <header
         ref={headerRef}
-        className={`hidden lg:flex px-28 justify-between  items-center py-6  w-full
+        className={`hidden lg:flex px-28 justify-between border-b border-blue items-center py-6  w-full
        bg-white`}
       >
         <Link href="/">
