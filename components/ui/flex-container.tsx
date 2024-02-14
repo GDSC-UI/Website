@@ -1,14 +1,13 @@
-import { PropsWithChildren } from "react";
-import Button from "./Button";
+import { ComponentPropsWithRef, PropsWithChildren } from "react"
+import Button from "./Button"
 
 export function FlexContainer({
   heading,
   period,
-  buttonText,
+  children,
 }: PropsWithChildren & {
-  heading: string;
-  period: string;
-  buttonText: string;
+  heading: string
+  period: string
 }) {
   return (
     <div className="flex gap-16 bg-gray-100 px-[7.5rem] items-center justify-center">
@@ -22,9 +21,22 @@ export function FlexContainer({
           proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis
           fermentum volutpat.
         </p>
-        <Button>{buttonText}</Button>
+        {children}
       </div>
       <div className="size-[400px] bg-gray-200 border border-blue"></div>
     </div>
-  );
+  )
+}
+
+type FlexContainerProps = ComponentPropsWithRef<typeof FlexContainer>
+
+export const FlexContainerWithButton = ({
+  children,
+  ...restProps
+}: FlexContainerProps) => {
+  return (
+    <FlexContainer {...restProps}>
+      <Button>{children}</Button>
+    </FlexContainer>
+  )
 }
