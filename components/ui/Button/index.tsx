@@ -4,7 +4,7 @@ import React from "react";
 interface Props {
   children?: React.ReactNode;
   className?: string;
-  variant?: "default" | "black" | "primary" | "transparent" | "filter";
+  variant?: "default" | "primary" | "transparent" | "filter";
   isLoading?: boolean;
   asLink?: string;
   onClick?: () => void;
@@ -23,13 +23,11 @@ const Button = React.forwardRef(
     ref: any
   ) => {
     const variants = {
-      black:
-        "px-4 md:px-6 py-1 md:py-2 bg-black text-white rounded-lg w-full block hover:bg-black active:bg-black",
       default: "px-4 py-2 md:py-2  rounded-lg  block",
       primary:
         "px-4 py-2 md:py-2 bg-blue hover:bg-blue duration-100  text-white block",
       transparent:
-        "px-4 py-2 md:py-2 bg-transparent hover:bg-blue-accent hover:text-white border border-blue-primary active:bg-blue-active text-blue-primary  rounded-lg block",
+        "px-4 py-2 md:py-2 bg-transparent hover:bg-blue hover:text-white border border-blue active:bg-blue-active text-blue block",
       filter:
         "px-4 py-2 md:py-2 bg-transparent hover:bg-blue-primary hover:text-white font-bold active:bg-blue-active text-primary-100 text-opacity-50  rounded-lg block",
     };

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/shared/header";
+import Footer from "@/components/shared/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
