@@ -1,5 +1,9 @@
-import Button from "@/components/ui/Button";
-import { Section } from "@/components/ui/section";
+import Button from "@/components/ui/Button"
+import { Section } from "@/components/ui/section"
+
+export const metadata = {
+  title:`Events`
+}
 
 export default function Page() {
   return (
@@ -52,7 +56,7 @@ export default function Page() {
         </div>
       </Section>
     </div>
-  );
+  )
 }
 
 function EventCard() {
@@ -72,7 +76,7 @@ function EventCard() {
         <Button>Register now</Button>
       </div>
     </div>
-  );
+  )
 }
 
 function EventsCardView() {
@@ -82,5 +86,5 @@ function EventsCardView() {
         <EventCard key={num} />
       ))}
     </main>
-  );
+  )
 }
