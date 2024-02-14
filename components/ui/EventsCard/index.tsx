@@ -10,12 +10,12 @@ const EventsCards = ({ title, description, route,  classnames }: ProgramCardProp
   return (     <div className={`w-full md:w-[24rem] bg-white ${classnames}`}>
   <div className="bg-lightgrey w-full h-[250px]"></div>
   <div className="p-5">
-    <p className="text-blue font-primary font-light">
+    <p className="text-blue font-light">
   {(' Upcoming ' + new Date().toLocaleDateString())}
     </p>
-    <h3 className="font-bold font-primary pt-5 text-2xl">{title}</h3>
-    <p className="font-primary font-light py-5">{description}</p>
-    <Link href={route} className="font-primary font-normal text-base pt-8 hover:text-blue duration-100 transition-all">
+    <h3 className="font-bold pt-5 text-2xl">{title}</h3>
+    <p className="font-light py-5">{description}</p>
+    <Link href={route} className="font-normal text-base pt-8 hover:text-blue duration-100 transition-all">
       Read more
     </Link>
   </div>

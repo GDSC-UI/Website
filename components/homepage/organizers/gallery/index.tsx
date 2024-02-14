@@ -2,7 +2,7 @@ import Button from "@/components/ui/Button";
 
 const Gallery = () => {
   return ( 
-  <section  className="text-center px-6 py-10 md:px-28 font-primary">
+  <section  className="text-center px-6 py-10 md:px-28 ">
       <h4 className="max-w-xl mx-auto pt-10 text-3xl md:text-5xl">
       Our Gallery
       </h4>

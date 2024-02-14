@@ -4,10 +4,10 @@ const Hero = () => {
   return (
     <div className="flex flex-wrap-reverse p-6 md:p-28 items-center gap-10  bg-lightblue">
       <div className="left max-w-2xl">
-        <h1 className="font-bold font-primary text-3xl md:text-6xl">
+        <h1 className="font-bold text-3xl md:text-6xl">
           Technology is for every young person
         </h1>
-        <p className="text-black font-light  font-primary text-base pt-4 max-w-xl">
+        <p className="text-black font-light  text-base pt-4 max-w-xl">
           Join and grow your skills in your school, or virtually. Kickstart your
           career journey with GDSCUI.
         </p>
