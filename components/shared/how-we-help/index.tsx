@@ -6,9 +6,9 @@ interface HowWeHelpProps {
 
 const HowWeHelp = ({ textOne, textTwo, textThree }: HowWeHelpProps) => {
   return (
-    <div className="text-center px-6 py-10 md:p-28 font-primary">
+    <div className="text-center px-6 py-10 md:p-28 ">
       <div className="w-full h-80 bg-lightblue"></div>
-      <h2 className="text-base font-primary font-bold mt-10">
+      <h2 className="text-base  font-bold mt-10">
         How does GDSC help?
       </h2>
       <h3 className="max-w-xl mx-auto pt-10 text-3xl md:text-5xl">

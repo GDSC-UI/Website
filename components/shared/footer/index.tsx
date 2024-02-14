@@ -32,7 +32,7 @@ const Footer = () => {
           {Object.entries(footerLinks.links).map(([title, links]) => (
             <React.Fragment key={title}>
               <section className="min-w-[8rem] md:p-4">
-                <h5 className="font-normal font-primary text-blue text-xl mb-2">
+                <h5 className="font-normal  text-blue text-xl mb-2">
                   {title}
                 </h5>
 
@@ -41,7 +41,7 @@ const Footer = () => {
                     <li key={l.title}>
                       <Link
                         href={l.route}
-                        className="text-blue normal-case font-primary text-base text-primary-100 font-light block   md:text-left py-2"
+                        className="text-blue normal-case  text-base text-primary-100 font-light block   md:text-left py-2"
                       >
                         {l.title}
                       </Link>
@@ -55,7 +55,7 @@ const Footer = () => {
 
 
 <section className="max-w-max md:p-4">
-<h5 className="font-normal font-primary text-blue text-xl mb-2">
+<h5 className="font-normal  text-blue text-xl mb-2">
                 Follow Us
                 </h5>
 
@@ -63,7 +63,7 @@ const Footer = () => {
                     <li>
                       <Link
                       href="mailto:hello@onbrails.com"
-                      className="text-blue normal-case font-primary text-base text-primary-100 font-light block   md:text-left py-2"
+                      className="text-blue normal-case  text-base text-primary-100 font-light block   md:text-left py-2"
                       >
                   hello@onbrails.com
                       </Link>
@@ -78,16 +78,16 @@ const Footer = () => {
         <div className="flex gap-8">
         <Link
        href="/privacy"
-        className="text-black underline normal-case font-primary text-base text-primary-100 font-light block   md:text-left py-2">
+        className="text-black underline normal-case  text-base text-primary-100 font-light block   md:text-left py-2">
              Privacy
       </Link>
         <Link
        href="/privacy"
-        className="text-black underline normal-case font-primary text-base text-primary-100 font-light block   md:text-left py-2" >
+        className="text-black underline normal-case  text-base text-primary-100 font-light block   md:text-left py-2" >
      Terms of use </Link>
         </div>
         </div>
-        <p className="text-center  md:w-auto font-light font-primary">
+        <p className="text-center  md:w-auto font-light">
             Copyright © {new Date().getFullYear()} GDSCUI
           </p>
       </div>
