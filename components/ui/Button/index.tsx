@@ -16,18 +16,19 @@ const Button = React.forwardRef(
       children,
       asLink,
       className,
-      variant = "default",
+      variant = "primary",
       isLoading,
       ...rest
     }: Props,
     ref: any
   ) => {
     const variants = {
-      default: "px-4 py-2 md:py-2  rounded-lg  block",
+      default: "px-4 py-2 md:py-2  rounded-lg  block ",
       primary:
         "px-4 py-2 md:py-2 bg-blue hover:bg-blue duration-100  text-white block",
       transparent:
         "px-4 py-2 md:py-2 bg-transparent hover:bg-blue hover:text-white border border-blue active:bg-blue-active text-blue block",
+      outline: "px-4 py-2 border border-blue text-blue",
       filter:
         "px-4 py-2 md:py-2 bg-transparent hover:bg-blue-primary hover:text-white font-bold active:bg-blue-active text-primary-100 text-opacity-50  rounded-lg block",
     };
@@ -57,5 +58,6 @@ const Button = React.forwardRef(
     );
   }
 );
+Button.displayName = "Button";
 
 export default Button;
