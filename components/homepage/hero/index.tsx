@@ -2,10 +2,10 @@ import Button from "@/components/ui/Button";
 
 const Hero = () => {
   return (
-    <div className="flex flex-wrap-reverse p-6 md:p-28 items-center gap-5 bg-lightblue">
+    <div className="flex flex-wrap-reverse p-6 md:p-28 items-center gap-10  bg-lightblue">
       <div className="left max-w-2xl">
         <h1 className="font-bold font-primary text-3xl md:text-6xl">
-        Tech is for every young person
+        Technology is for every young person
         </h1>
         <p className="text-black font-light  font-primary text-base pt-4 max-w-xl">
           Join and grow your skills  in your school, or virtually.
