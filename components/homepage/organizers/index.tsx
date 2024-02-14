@@ -10,7 +10,7 @@ const Organizers = () => {
   Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra.
   </p>
 
-  <div className="flex mt-14 gap-10 flex-wrap justify-center">
+  <div className="flex mt-14 gap-16 flex-wrap justify-center">
     <SpeakerCard/>
     <SpeakerCard/>
     <SpeakerCard/>
