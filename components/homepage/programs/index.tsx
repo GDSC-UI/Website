@@ -16,17 +16,17 @@ const Programmes = () => {
         <ProgramCard
           classnames={`w-[26rem]`}
           title="Study Jams"
-          route="event/studyjam"
+          route="/study-jam"
           description="Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat."
         />
         <ProgramCard
           title="Techquest"
-          route="event/studyjam"
+          route="/tech-quest"
           description="Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat."
         />
         <ProgramCard
           title="NextHack"
-          route="event/studyjam"
+          route="/next-hack"
           description="Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat."
         />
       </div>

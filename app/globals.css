@@ -113,14 +113,12 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  font-family: generalSans;
   min-width: 170px;
   z-index: 1;
 }
 
 .dropdown-content a {
   float: none;
-  color: #072b57;
   font-weight: 500;
   padding: 10px 16px;
   text-decoration: none;

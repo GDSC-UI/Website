@@ -20,13 +20,13 @@ const Header = () => {
         </Link>
 
         <div className="flex gap-10">
-          <Link href="/" className="text-black text-base font-light">
+          <Link href="/about-us" className="text-black text-base font-light">
             About Us
           </Link>
-          <Link href="/about" className="text-black text-base font-light">
+          <Link href="/events" className="text-black text-base font-light">
             Events
           </Link>
-          <Link href="/contact" className="text-black text-base font-light">
+          <Link href="#programmes" className="text-black text-base font-light">
             Programs
           </Link>
           <div className="dropdown z-50">
@@ -41,14 +41,14 @@ const Header = () => {
               />
             </button>
             <div className="dropdown-content shadow-lg bg-white rounded-lg left-50">
-              <Link href="/about" className="text-black text-base font-light">
-                About Us
+              <Link href="/next-hack" className="text-black text-base font-light">
+                Next Hack
               </Link>
-              <Link href="/about" className="text-black text-base font-light">
-                Events
+              <Link href="/study-jam" className="text-black text-base font-light">
+                Study Jam
               </Link>
-              <Link href="/contact" className="text-black text-base font-light">
-                Programs
+              <Link href="/tech-quest" className="text-black text-base font-light">
+               Tech Quest
               </Link>
             </div>
           </div>
