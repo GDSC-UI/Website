@@ -12,10 +12,10 @@ export const Section = ({
   className?: string;
 }) => (
   <section
-    className={cn(`my-10 space-y-10 text-center px-[7.5rem] py-20`, className)}
+    className={cn(`my-10 space-y-10 text-center md:px-[7.5rem] px-5 py-20`, className)}
   >
     {content && <p className="font-medium">{content}</p>}
-    <h1 className="text-5xl capitalize">{heading}</h1>
+    <h1 className="text-3xl md:text-5xl capitalize">{heading}</h1>
     {children}
   </section>
 );

@@ -27,7 +27,7 @@ export default function Page() {
       <section className="bg-gray-100 py-20 flex justify-between md:px-28 px-6 gap-4">
 
         <div className="text-center">
-          <p className="">since</p>
+          <p className="">Since</p>
           <h5 className="text-3xl font-bold mt-4  md:text-5xl">2019</h5>
         </div>
 
@@ -53,7 +53,7 @@ export default function Page() {
         <h3 className="font-bold text-3xl md:text-5xl mx-auto text-center">Our Values</h3>
       <p className="max-w-3xl mx-auto text-center mt-4">Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu.</p>
 
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center flex-wrap mt-8">
           <div className="border-l border-t border-b border-blue w-72 h-96 py-10 px-6">
             <h4 className="font-bold text-2xl ">Our Mission</h4>
             <p className="text-grey pt-5 font-light">Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec </p>
