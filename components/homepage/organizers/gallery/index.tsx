@@ -1,18 +1,16 @@
 import Button from "@/components/ui/Button";
 
 const Gallery = () => {
-  return ( 
-  <section  className="text-center px-6 py-10 md:px-28 ">
+  return (
+    <section className="text-center px-6 py-10 md:px-28 ">
       <h4 className="max-w-xl font-bold mx-auto pt-10 text-3xl md:text-5xl">
-      Our Gallery
+        Our Gallery
       </h4>
       <div className="w-full h-80 bg-lightblue my-6"></div>
       <div className="max-w-3xl mx-auto text-center mt-5">
         <p className="font-light">
-        Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat.
-        </p>
-        <p className="font-light pt-6">
-        Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat. Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat.
+          A picture is worth a thousand words, they say. So, why don't you dive
+          into our gallery to see for yourself what we do and how we do it?
         </p>
 
         <Button
@@ -28,9 +26,9 @@ const Gallery = () => {
         >
           Join GDSC UNIBAN
         </Button>
-        </div>
+      </div>
+    </section>
+  );
+};
 
-  </section> );
-}
- 
 export default Gallery;

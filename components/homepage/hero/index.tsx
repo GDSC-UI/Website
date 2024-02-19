@@ -5,11 +5,12 @@ const Hero = () => {
     <div className="flex flex-wrap-reverse p-6 md:p-28 items-center gap-10  bg-lightblue">
       <div className="left max-w-2xl">
         <h1 className="font-bold text-3xl md:text-6xl">
-          Technology is for every young person
+          Empowering young minds to build the future.
         </h1>
         <p className="text-black font-light  text-base pt-4 max-w-xl">
-          Join and grow your skills in your school, or virtually. Kickstart your
-          career journey with GDSCUI.
+          We believe in the power of connections, the thrill of learning, and
+          the joy of growth. This is where innovation meets collaboration,
+          curiosity ignites knowledge, and where challenges fuel progress.
         </p>
         <Button
           variant="primary"
