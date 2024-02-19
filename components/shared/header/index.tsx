@@ -40,18 +40,27 @@ const Header = () => {
                 className="inline-flex"
               />
             </button>
-            <div className="dropdown-content shadow-lg bg-white rounded-lg left-50">
-              <Link href="/next-hack" className="text-black text-base font-light">
+            <div className="dropdown-content shadow-xl bg-white border-b-2 border-blue left-50">
+              <Link
+                href="/next-hack"
+                className="text-black text-base font-light"
+              >
                 Next Hack
               </Link>
-              <Link href="/study-jam" className="text-black text-base font-light">
-                Study Jam
+              <Link
+                href="/contact-us"
+                className="text-black text-base font-light"
+              >
+                Contact Us
               </Link>
-              <Link href="/tech-quest" className="text-black text-base font-light">
-               Tech Quest
+              <Link href="/gallery" className="text-black text-base font-light">
+                Gallery
               </Link>
-              <Link href="/organizers" className="text-black text-base font-light">
-               Organizers
+              <Link
+                href="/organizers"
+                className="text-black text-base font-light"
+              >
+                Organizers
               </Link>
             </div>
           </div>
@@ -70,7 +79,7 @@ const Header = () => {
         ref={headerRef}
         className={`flex lg:hidden justify-between items-center  bg-white relative py-3 px-5  w-full `}
       >
-         <Link href="/">
+        <Link href="/">
           <div className="w-36 h-12 bg-black"></div>
         </Link>
 
@@ -96,21 +105,18 @@ const Header = () => {
           </div>
         ) : null}
 
-      
-          <button
-            onClick={() => setVisible(!visible)}
-            tabIndex={0}
-            aria-label="menu button"
-            role="button"
-            className={`
+        <button
+          onClick={() => setVisible(!visible)}
+          tabIndex={0}
+          aria-label="menu button"
+          role="button"
+          className={`
                           appearance-none outline-none text-3xl md:text-4xl lg:hidden 
                           cursor-default transition-all duration-300 hover:opacity-70 
                           focus:ring-2 focus:ring-offset-2  bg-blue
                           rounded-lg p-2 md:p-1 flex justify-center items-center box-border w-9 h-9
                           md:h-12 md:w-16`}
-          >
-          </button>
-
+        ></button>
       </header>
     </div>
   );

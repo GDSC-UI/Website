@@ -20,7 +20,7 @@ const TeamCard = ({
   image,
 }: TeamCardProps) => {
   return (
-    <div className="flex gap-4 md:w-[36rem] p-5">
+    <div className="flex flex-wrap-reverse gap-4 md:w-[36rem] mx-auto p-5">
       <div className="max-w-60">
         <h2 className="text-2xl md:text-3xl max-w-56">{name}</h2>
         <p className="text-2xl my-5">{role}</p>
@@ -51,7 +51,7 @@ const TeamCard = ({
         </div>
       </div>
 
-      <div className="md:w-[280px] h-[340px] bg-lightgrey rounded-3xl"></div>
+      <div className="md:w-[280px] w-full h-[340px] bg-lightgrey rounded-3xl"></div>
     </div>
   );
 };

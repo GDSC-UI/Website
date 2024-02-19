@@ -19,7 +19,7 @@ export default function Page() {
         </p>
       </section>
       <section className="bg-white">
-        <nav className="flex py-10 px-10 md:px-28 justify-between items-center border-b border-blue">
+        <nav className="md:flex hidden py-10 px-10 md:px-28 justify-between items-center border-b border-blue">
           <button className="bg-lightblue uppercase w-52 h-20 text-blue text-2xl">
             the {`  `} team
           </button>
