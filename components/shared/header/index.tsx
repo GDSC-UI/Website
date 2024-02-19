@@ -50,6 +50,9 @@ const Header = () => {
               <Link href="/tech-quest" className="text-black text-base font-light">
                Tech Quest
               </Link>
+              <Link href="/organizers" className="text-black text-base font-light">
+               Organizers
+              </Link>
             </div>
           </div>
         </div>
@@ -65,7 +68,7 @@ const Header = () => {
       {/**Mobile */}
       <header
         ref={headerRef}
-        className={`flex lg:hidden justify-between items-center relative py-3 px-5  w-full `}
+        className={`flex lg:hidden justify-between items-center  bg-white relative py-3 px-5  w-full `}
       >
          <Link href="/">
           <div className="w-36 h-12 bg-black"></div>
@@ -75,7 +78,7 @@ const Header = () => {
           <div
             className={`${
               visible ? style.drop_visible : ""
-            } transition-all duration-300 bg-white z-50 lg:bg-transparent shadow-lg lg:shadow-none 
+            } transition-all duration-300 bg-white z-50 shadow-lg lg:shadow-none 
                           px-6 lg:px-0 py-10 lg:py-0 w-full lg:w-auto absolute left-0 top-14 md:top-28 lg:top-0 lg:static  flex-col 
                           lg:flex-row justify-between lg:items-center lg:space-x-24`}
           >

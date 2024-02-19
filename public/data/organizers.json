@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Oyero Habibullah",
+    "role": "Tech Lead",
+    "description": "Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat.",
+    "github": "https://github.com/openai/chatgpt",
+    "twitter": "https://twitter.com/OpenAI",
+    "image": "https://example.com/chatgpt_image.jpg"
+  },
+  {
+    "name": "BERT",
+    "role": "Natural Language ",
+    "description": "Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat.",
+    "github": "https://github.com/google-research/bert",
+    "twitter": "https://twitter.com/google",
+    "image": "https://example.com/bert_image.jpg"
+  },
+  {
+    "name": "GPT-3",
+    "role": "Language Model",
+    "description": "Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat.",
+    "github": "https://github.com/openai/gpt-3",
+    "twitter": "https://twitter.com/OpenAI",
+    "image": "https://example.com/gpt3_image.jpg"
+  },
+  {
+    "name": "YOLO",
+    "role": "Object Detection",
+    "description": "Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat.",
+    "github": "https://github.com/AlexeyAB/darknet",
+    "twitter": "https://twitter.com/josephredmon",
+    "image": "https://example.com/yolo_image.jpg"
+  },
+  {
+    "name": "ResNet",
+    "role": "Image Model",
+    "description": "Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat.",
+    "github": "https://github.com/pytorch/vision",
+    "twitter": "https://twitter.com/PyTorch",
+    "image": "https://example.com/resnet_image.jpg"
+  },
+  {
+    "name": "Transformer",
+    "role": "Sequence-to-Sequence",
+    "description": "Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat.",
+    "github": "https://github.com/huggingface/transformers",
+    "twitter": "https://twitter.com/huggingface",
+    "image": "https://example.com/transformer_image.jpg"
+  }
+]
