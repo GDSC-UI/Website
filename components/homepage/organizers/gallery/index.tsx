@@ -9,7 +9,7 @@ const Gallery = () => {
       <div className="w-full h-80 bg-lightblue my-6"></div>
       <div className="max-w-3xl mx-auto text-center mt-5">
         <p className="font-light">
-          A picture is worth a thousand words, they say. So, why don't you dive
+          A picture is worth a thousand words, they say. So, why don&apos;t you dive
           into our gallery to see for yourself what we do and how we do it?
         </p>
 
