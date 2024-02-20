@@ -7,7 +7,7 @@ const Organizers = () => {
   Meet Our Organizers
   </h3>
   <p className="text-center  font-light max-w-2xl mx-auto mt-6">
-  Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra.
+  Meet our chefs. Get to know the people behind the magic; the brains behind the scene.
   </p>
 
   <div className="flex mt-14 gap-16 flex-wrap justify-center">

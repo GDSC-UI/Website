@@ -1,32 +1,21 @@
 const footerLinks = {
   links: {
-    "For Talents": [
-      { title: "Next Hack", route: "/nexthack" },
-     { title: "Tech quest", route: "/techquest" },
+    Students: [
+      { title: "Join GDSC", route: "/" },
+      { title: "Volunteer", route: "/" },
     ],
 
-    "Business": [
+    Business: [
       { title: "About us", route: "/about-us" },
-       { title: "Blog", route: "/blog" },
- 
+      { title: "Blog", route: "/blog" },
+      { title: "Organizers", route: "/organizers" },
     ],
 
-    "Resources": [
-
-      { title: "About us", route: "/about-us" },
-       { title: "Blog", route: "/blog" },
-       { title: "Contact Us", route: "/contact-us" },
-       { title: "Support", route: "/support" },
-
- 
+    Events: [
+      { title: "Next Hack", route: "/next-hack" },
+      { title: "Techquest", route: "/techquest" },
+      { title: "Study Jam", route: "/study-jam" },
     ],
-
-    "Collaborate": [
-      { title: "Partners", route: "/partners" },
-      { title: "Community", route: "/community" },
-    ],
-
-
   },
 };
 

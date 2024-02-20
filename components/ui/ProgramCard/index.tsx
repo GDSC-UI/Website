@@ -22,7 +22,7 @@ const ProgramCard = ({
         <p className="font-light py-5">{description}</p>
         <Link
           href={route}
-          className="font-normal text-base pt-8 hover:text-blue duration-100 transition-all"
+          className="font-normal text-base text-blue pt-8 hover:font-bold duration-100 transition-all"
         >
           Read more
         </Link>
