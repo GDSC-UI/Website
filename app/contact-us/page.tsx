@@ -40,8 +40,12 @@ function ContactCard() {
   return (
     <section className="bg-blue rounded-[2.5rem] p-20 text-white space-y-16">
       <div className="text-center space-y-6">
-        <p className={fontStyle.roboto_mono}>Contact Information</p>
-        <p>Fill the form and our team will get back to you within 24 hours</p>
+        <p className={cn(`text-2xl`, fontStyle.roboto_mono)}>
+          Contact Information
+        </p>
+        <p className="text-lg text-pretty">
+          Fill the form and our team will get back to you within 24 hours
+        </p>
       </div>
       <ContactList />
       <Socials />
@@ -101,7 +105,7 @@ function LabelInput({
 function LabelTextarea({ children }: Required<PropsWithChildren>) {
   return (
     <Label label={children as string}>
-      <textarea className={cn(`h-28 resize-none px-2`, CLASS_NAME)}></textarea>
+      <textarea className={cn(`h-28 resize-none p-2`, CLASS_NAME)}></textarea>
     </Label>
   )
 }
