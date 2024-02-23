@@ -1,26 +1,27 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import React from "react";
-import { footerLinks } from "./footer.data";
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import React from "react"
+import { footerLinks } from "./footer.data"
+import { Socials } from "@/components/ui/socials"
 
 const socialLinks = [
   { title: "X", route: "https://x.com/onbrails" },
   { title: "LinkedIn", route: "https://www.linkedin.com/company/onbrails/" },
   { title: "Instagram", route: "https://instagram.com/onbrails" },
   { title: "  Facebook", route: "https://www.facebook.com/Onbrails" },
-];
+]
 
 const Legal = [
   { title: `Terms of service `, route: "/terms-of-services" },
   { title: "Privacy policy", route: "/privacy-policy" },
   { title: "Cookie policy", route: "/cookie-policy" },
   { title: "Security", route: "/security" },
-];
+]
 
 const Footer = () => {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   return (
     <section className="px-5 md:px-28 bg-lightblue py-8">
@@ -49,8 +50,7 @@ const Footer = () => {
 
           <section className="max-w-max md:p-4">
             <h5 className="font-medium  text-blue text-xl mb-2">Follow Us</h5>
-
-            <ul>
+            <ul className="mb-2">
               <li>
                 <Link
                   href="mailto:hello@ogdscui.com"
@@ -60,6 +60,7 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
+            <Socials />
           </section>
         </div>
 
@@ -86,7 +87,7 @@ const Footer = () => {
         </p>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
