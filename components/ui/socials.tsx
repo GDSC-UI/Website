@@ -1,5 +1,3 @@
-"use client"
-
 import { ICONS } from "./icons"
 
 export function Socials() {
