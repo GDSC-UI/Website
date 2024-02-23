@@ -1,4 +1,9 @@
-import { ComponentPropsWithRef, PropsWithChildren } from "react"
+import {
+  ComponentPropsWithRef,
+  PropsWithChildren,
+  PropsWithRef,
+  ReactNode,
+} from "react"
 import Button from "./Button"
 
 export function FlexContainer({
@@ -40,3 +45,7 @@ export const FlexContainerWithButton = ({
     </FlexContainer>
   )
 }
+
+export const CenteredBox = ({ children }: { children: ReactNode }) => (
+  <div className="flex justify-center">{children}</div>
+)
