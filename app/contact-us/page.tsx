@@ -86,7 +86,7 @@ function LabelInput({
     <Label label={children as string}>
       <input
         className={cn(
-          `py-2
+          `p-2
         `,
           CLASS_NAME
         )}
@@ -101,7 +101,7 @@ function LabelInput({
 function LabelTextarea({ children }: Required<PropsWithChildren>) {
   return (
     <Label label={children as string}>
-      <textarea className={cn(`h-28 resize-none`, CLASS_NAME)}></textarea>
+      <textarea className={cn(`h-28 resize-none px-2`, CLASS_NAME)}></textarea>
     </Label>
   )
 }
