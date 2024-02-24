@@ -7,6 +7,8 @@ export function HeroImage() {
       <Image
         src={heroSrc}
         alt="hero image with GDSC UI as text in a white background box on a yellow patterned background"
+        quality={100}
+        priority
         placeholder="blur"
       />
     </div>
