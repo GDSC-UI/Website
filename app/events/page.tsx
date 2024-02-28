@@ -1,43 +1,36 @@
 import Button from "@/components/ui/Button"
+import { HeroImage } from "@/components/ui/hero-image"
 import { Section } from "@/components/ui/section"
+import { PastEvents } from "./events"
 
 export const metadata = {
-  title:`Events`
+  title: `Events`,
 }
 
 export default function Page() {
   return (
     <div>
-      <div className="h-80 bg-gray-400"></div>
-      <Section
-        content="Featured Events"
-        heading="Developer Student Club University of Ibadan - Events"
-      >
-        <p>
-          Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
-          enim nibh ac neque viverra. Scelerisque neque elit tempus metus
-          interdum luctus eget eu. Senectus lorem nec habitasse libero senectus
-          proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis
-          fermentum volutpat.
+      <HeroImage />
+      <div className="text-center space-y-5">
+        <h2>Upcoming Events</h2>
+        <p className="text-grey">
+          Interesting times ahead, guys! Stay informed and up-to-date about our
+          upcoming events.
         </p>
-      </Section>
-      <Section heading="upcoming events" className="bg-gray-100 py-20">
-        <p>
-          Loremm ipsum dolor sit amet consectetur. Egestas turpis integer et sit
-          enim nibh ac neque viverra. Scelerisque neque elit tempus metus
-          interdum luctus eget eu.
-        </p>
+      </div>
+      <section className="py-20 px-[7.5rem]">
         <EventsCardView />
-      </Section>
+      </section>
+      <PastEvents />
       <Section content="how does GDSC help?" heading="our gallery">
-        <p>
+        <p className="text-grey">
           Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
           enim nibh ac neque viverra. Scelerisque neque elit tempus metus
           interdum luctus eget eu. Senectus lorem nec habitasse libero senectus
           proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis
           fermentum volutpat.
         </p>
-        <p>
+        <p className="text-grey">
           Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
           enim nibh ac neque viverra. Scelerisque neque elit tempus metus
           interdum luctus eget eu. Senectus lorem nec habitasse libero senectus
@@ -48,7 +41,7 @@ export default function Page() {
           habitasse libero senectus proin velit. Dis aliquam convallis donec
           adipiscing pulvinar enim duis fermentum volutpat.
         </p>
-        <div className="flex gap-5 justify-center items-center flex-col">
+        <div className="flex flex-col items-center justify-center gap-5">
           <Button className="">Join GDSC UNIBADAN</Button>
           <Button variant="outline" className="font-bold">
             See more photos
@@ -63,12 +56,12 @@ function EventCard() {
   return (
     <div className="text-left">
       <div className="bg-lightgrey h-72"></div>
-      <div className="px-5 space-y-5 border border-blue border-t-0 py-10">
+      <div className="px-5 py-10 space-y-5 border border-t-0 border-blue">
         <h3>Global Gamers Challenge by Flutter and Global Citizen</h3>
         <span className="inline-block">
           {new Date().toDateString()} | X space
         </span>
-        <p>
+        <p className="text-grey">
           Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
           enim nibh ac neque viverra. Scelerisque neque elit tempus metus
           interdum luctus eget eu.
