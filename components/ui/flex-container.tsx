@@ -1,5 +1,4 @@
-import { ComponentPropsWithoutRef, PropsWithChildren, ReactNode } from "react"
-import Button from "./Button"
+import { PropsWithChildren, ReactNode } from "react"
 import { RotatedImage } from "./rotated-image"
 
 export function FlexContainer({
@@ -21,19 +20,6 @@ export function FlexContainer({
         <RotatedImage />
       </div>
     </div>
-  )
-}
-
-type FlexContainerProps = ComponentPropsWithoutRef<typeof FlexContainer>
-
-export const FlexContainerWithButton = ({
-  children,
-  ...restProps
-}: FlexContainerProps) => {
-  return (
-    <FlexContainer {...restProps}>
-      <Button>{children}</Button>
-    </FlexContainer>
   )
 }
 
