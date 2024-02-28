@@ -5,6 +5,8 @@ import { SpeakerCardsView } from "./speakers"
 import { PanelView } from "./panel-view"
 import { FourColGrid } from "@/components/ui/grid-container"
 import { Gallery } from "@/components/ui/gallery"
+import { MyImage } from "@/components/ui/image"
+import backdropSrc from "./techquest-images/backdrop.jpg"
 
 export const metadata = {
   title: `Tech Quest`,
@@ -62,15 +64,14 @@ export default function Page() {
           <PanelView />
         </Section>
         <Section heading="partnerships & sponsors">
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et
-            sit enim nibh ac neque viverra.
+          <p className="text-grey">
+            Empowering innovation together: Meet our esteemed partners and
+            sponsors driving the future of technology with GDSC.
           </p>
-          <FourColGrid>
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-              <div key={num} className="size-40 bg-lightgrey"></div>
-            ))}
-          </FourColGrid>
+          <MyImage
+            src={backdropSrc}
+            alt="TechQuest backdrop image that showcases  sponsors and partners for the event"
+          />
         </Section>
         <Section heading="event pictures">
           <p>
