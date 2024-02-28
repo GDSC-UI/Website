@@ -7,6 +7,10 @@ import { Socials } from "@/components/ui/socials"
 import { ContactList } from "./contact-list"
 import { HeroImage } from "@/components/ui/hero-image"
 
+export const metadata = {
+  title: `Contact  us`,
+}
+
 export default function Page() {
   return (
     <div>
