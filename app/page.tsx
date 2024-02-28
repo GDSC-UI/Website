@@ -1,11 +1,11 @@
-import ExploreEvents from "@/components/homepage/events";
-import FAQS from "@/components/homepage/faqs";
-import Hero from "@/components/homepage/hero";
-import Organizers from "@/components/homepage/organizers";
-import Gallery from "@/components/homepage/organizers/gallery";
-import PartnerSponsors from "@/components/homepage/partners-sponsors";
-import Programmes from "@/components/homepage/programs";
-import HowWeHelp from "@/components/shared/how-we-help";
+import ExploreEvents from "@/components/homepage/events"
+import FAQS from "@/components/homepage/faqs"
+import Hero from "@/components/homepage/hero"
+import Organizers from "@/components/homepage/organizers"
+import Gallery from "@/components/homepage/organizers/gallery"
+import PartnerSponsors from "@/components/homepage/partners-sponsors"
+import Programmes from "@/components/homepage/programs"
+import HowWeHelp from "@/components/shared/how-we-help"
 
 export default function Home() {
   return (
@@ -19,5 +19,5 @@ export default function Home() {
       <Organizers />
       <Gallery />
     </section>
-  );
+  )
 }

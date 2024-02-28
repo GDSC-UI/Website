@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config = {
   darkMode: ["class"],
@@ -25,11 +25,11 @@ const config = {
         blue: "#4285F4",
         lightblue: "#F1F3F4",
         lightgrey: "#D9D9D9",
-        grey:"#5F6368",
-        green:"#34A853",
-        yellow:"#F9AB00",
-        red:"#EA4335",
-        
+        grey: "#5F6368",
+        green: "#34A853",
+        yellow: "#F9AB00",
+        red: "#EA4335",
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -87,6 +87,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+} satisfies Config
 
-export default config;
+export default config
