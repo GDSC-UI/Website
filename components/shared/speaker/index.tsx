@@ -1,9 +1,9 @@
-import Image, { StaticImageData } from "next/image"
+import Image, { StaticImageData } from "next/image";
 
 const SpeakerCard = ({ name, src }: { name: string; src: StaticImageData }) => {
   return (
-    <div className="text-center p-5">
-      <div className="bg-lightgrey rounded-[50%] w-36 h-36 mx-auto">
+    <div className="text-center flex justify-center items-center flex-col p-5">
+      <div className="rounded-[50%] w-36 h-36 mx-auto">
         <Image
           src={src}
           alt={`${name}ʼs cover photo`}
@@ -15,7 +15,7 @@ const SpeakerCard = ({ name, src }: { name: string; src: StaticImageData }) => {
       <h4 className="font-bold  pt-4">{name}</h4>
       <p className="font-light ">Software Engineer</p>
     </div>
-  )
-}
+  );
+};
 
-export default SpeakerCard
+export default SpeakerCard;

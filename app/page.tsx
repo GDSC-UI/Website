@@ -14,9 +14,9 @@ export default function Home() {
       <HowWeHelp textOne="Google Developer Student Clubs, University of Ibadan (GDSC UI) is a dynamic tech club dedicated to fostering community, learning and innovation among the student developer community. GDSC UI operates under the umbrella of Google Developer Student Clubs. Our mission is to create a vibrant community that empowers members to strive, grow, and learn the ever-evolving world of technology." />
       <Programmes />
       <ExploreEvents />
-      <PartnerSponsors />
-      <FAQS />
       <Organizers />
+      <FAQS />
+
       <Gallery />
     </section>
   )

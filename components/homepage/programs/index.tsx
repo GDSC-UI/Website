@@ -25,7 +25,12 @@ const Programmes = () => {
         <ProgramCard
           title="NextHack"
           route="/next-hack"
-          description="Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit enim nibh ac neque viverra. Scelerisque neque elit tempus metus interdum luctus eget eu. Senectus lorem nec habitasse libero senectus proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis fermentum volutpat."
+          description="NexTech Hack is a groundbreaking hackathon hosted by the Google Developer Student Club (GDSC) at the University of Ibadan. It is a premier event designed to bridge the gap between technical skills and practical problem-solving, while fostering innovation and collaboration among students in the South-West region of Nigeria."
+        />
+        <ProgramCard
+          title="Google Solutions Challenge"
+          route="/next-hack"
+          description="The Google Solutions Challenge stands as an impactful program orchestrated by GDSC (Google Developer Student Clubs) with the primary objective of empowering university students to address local challenges by harnessing the capabilities of Google technologies."
         />
       </div>
     </section>

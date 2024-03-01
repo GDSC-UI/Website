@@ -16,7 +16,7 @@ const Header = () => {
        bg-white`}
       >
         <Link href="/">
-          <div className="w-32 h-12 bg-black"></div>
+          <Image src="/logo.jpg" width={300} height={53} alt="GDSC UNIBAN" />
         </Link>
 
         <div className="flex gap-10">
@@ -80,7 +80,7 @@ const Header = () => {
         className={`flex lg:hidden justify-between items-center  bg-white relative py-3 px-5  w-full `}
       >
         <Link href="/">
-          <div className="w-36 h-12 bg-black"></div>
+          <Image src="/logo.jpg" width={300} height={53} alt="GDSC UNIBAN" />
         </Link>
 
         {visible ? (
