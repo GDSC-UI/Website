@@ -30,10 +30,10 @@ export default function Page() {
         </p>
         <Button>Register now</Button>
       </FlexContainer>
-      <article className="py-20 px-[7.5rem]">
-        <strong className="mb-5 block">
+      <article className="py-20 px-8 md:px-[7.5rem]">
+        <span className="mb-5 block font-medium text-center">
           What area/problem are you focusing on?
-        </strong>
+        </span>
         <SectionList heading="event format" ordered>
           <p>NexTech Hack is structured into two stages:</p>
           <li>
@@ -85,7 +85,7 @@ export default function Page() {
       </article>
       <Section content="How and when to register" heading="join us">
         <div className="text-center space-y-10">
-          <p className="text-grey">
+          <p className="text-left">
             NexTech Hack is more than just a hackathon; itʼs a movement towards
             a brighter, more technologically empowered future. Whether youʼre a
             student, a mentor, a judge, or an industry partner, we invite you to
