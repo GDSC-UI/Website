@@ -16,12 +16,10 @@ export default function Page() {
     <div>
       <HeroImage />
       <Section heading="contact us" content="You have a message for us?">
-        <p>
-          Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
-          enim nibh ac neque viverra. Scelerisque neque elit tempus metus
-          interdum luctus eget eu. Senectus lorem nec habitasse libero senectus
-          proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis
-          fermentum volutpat.
+        <p className="text-pretty">
+          Questions are the keys that unlock doors to understanding and
+          innovation.
+          <br /> Ask away !
         </p>
       </Section>
       <ContactView />
