@@ -11,7 +11,7 @@ export function FlexContainer({
 }) {
   return (
     <div className="flex gap-16 bg-lightblue px-[7.5rem] items-center justify-center">
-      <div className="space-y-5 py-[7.5rem] basis-1/2">
+      <div className="space-y-5 py-[7.5rem]">
         <h1 className="capitalize">{heading}</h1>
         <span className="inline-block font-bold">{period}</span>
         {children}
