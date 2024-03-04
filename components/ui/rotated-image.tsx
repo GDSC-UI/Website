@@ -1,5 +1,5 @@
-import demoSrc from "./gallery/images/image_1.jpg";
-import { MyImage } from "./image";
+import demoSrc from "./gallery/images/image_1.jpg"
+import { MyImage } from "./image"
 
 export function RotatedImage() {
   return (
@@ -11,5 +11,5 @@ export function RotatedImage() {
         priority
       />
     </div>
-  );
+  )
 }
