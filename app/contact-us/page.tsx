@@ -29,8 +29,8 @@ export default function Page() {
 
 function ContactView() {
   return (
-    <main className="flex justify-center my-20">
-      <div className="bg-[#F1F3F4] flex justify-center rounded-[2.5rem] gap-0">
+    <main className="flex justify-center my-20 mx-8 md:mx-[7.5rem]">
+      <div className="bg-[#F1F3F4] flex justify-center rounded-[2.5rem] gap-0 flex-wrap">
         <ContactCard />
         <ContactForm />
       </div>
@@ -40,7 +40,7 @@ function ContactView() {
 
 function ContactCard() {
   return (
-    <section className="bg-blue rounded-[2.5rem] p-20 text-white space-y-16">
+    <section className="bg-blue rounded-[2.5rem] p-8 md:p-20 text-white space-y-16">
       <div className="text-center space-y-6">
         <p className={cn(`text-2xl`, fontStyle.roboto_mono)}>
           Contact Information
@@ -58,7 +58,7 @@ const CLASS_NAME = `border border-[#5F6368] rounded-lg w-full`
 
 function ContactForm() {
   return (
-    <form className="pt-[7.5rem] pb-[4.75rem] px-20 rounded-e-[2.5rem] space-y-10">
+    <form className="pt-[7.5rem] pb-[4.75rem] px-8 md:px-20 rounded-e-[2.5rem] space-y-10">
       <LabelInput>your full name</LabelInput>
       <div className="flex gap-10">
         <LabelInput type="email">email</LabelInput>
