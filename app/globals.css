@@ -78,15 +78,20 @@
   }
 
   h1 {
-    @apply text-[3.5rem] leading-[4.5rem];
-  }
-
-  h2 {
     @apply text-5xl;
   }
 
+  h2 {
+    @apply text-[2rem];
+  }
+
   h3 {
-    @apply text-2xl;
+    @apply text-2xl
+  }
+
+  p,
+  li {
+    @apply md:text-lg leading-8
   }
 }
 
