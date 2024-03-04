@@ -12,21 +12,6 @@ const SelectGroup = SelectPrimitive.Group
 
 const SelectValue = SelectPrimitive.Value
 
-const DropdownIcon = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="12"
-    height="12"
-    viewBox="0 0 12 12"
-    fill="none"
-  >
-    <path
-      d="M10.4997 2.50019L1.49971 2.50019C1.40859 2.50048 1.31927 2.52561 1.24137 2.57288C1.16348 2.62015 1.09994 2.68777 1.05762 2.76847C1.01529 2.84916 0.99577 2.93987 1.00116 3.03083C1.00655 3.12179 1.03665 3.20956 1.08821 3.28469L5.58821 9.78469C5.77471 10.0542 6.22371 10.0542 6.41071 9.78469L10.9107 3.28469C10.9628 3.20972 10.9933 3.12191 10.999 3.03079C11.0047 2.93968 10.9853 2.84875 10.943 2.76789C10.9006 2.68702 10.8369 2.61931 10.7587 2.57212C10.6806 2.52492 10.591 2.50005 10.4997 2.50019Z"
-      fill="black"
-    />
-  </svg>
-)
-
 const SelectTrigger = React.forwardRef<
   React.ElementRef<typeof SelectPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger>
@@ -40,7 +25,9 @@ const SelectTrigger = React.forwardRef<
     {...props}
   >
     {children}
-    <SelectPrimitive.Icon asChild>{DropdownIcon}</SelectPrimitive.Icon>
+    <SelectPrimitive.Icon asChild>
+      <ChevronDown className="h-4 w-4 opacity-50" />
+    </SelectPrimitive.Icon>
   </SelectPrimitive.Trigger>
 ))
 SelectTrigger.displayName = SelectPrimitive.Trigger.displayName
