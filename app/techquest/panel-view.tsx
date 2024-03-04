@@ -4,7 +4,7 @@ import panelTwo from "./techquest-images/panel_2.jpg"
 
 export function PanelView() {
   return (
-    <div className="space-y-28">
+    <div className="space-y-28 max-w-[80%] mx-auto">
       {[panelOne, panelTwo].map((image, idx) => (
         <MyImage
           key={crypto.randomUUID()}
