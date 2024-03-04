@@ -8,11 +8,11 @@ const SpeakerCard = ({
 }: {
   name: string
   src: StaticImageData | string
-  title?: string
+  title: string
 }) => {
-  const alt = title ? `${title}, ${name}ʼs headshot` : `${name}ʼs headshot`
+  const alt = `${title}, ${name}ʼs headshot`
   return (
-    <div className="text-center p-5">
+    <div className="text-center p-5 text-black">
       <div className="bg-lightgrey rounded-[50%] w-36 h-36 mx-auto">
         <MyImage
           src={src}
@@ -22,8 +22,8 @@ const SpeakerCard = ({
           className="rounded-[7.5rem]"
         />
       </div>
-      <h4 className="font-bold  pt-4">{name}</h4>
-      <p className="font-light text-balance">{title || `Software Engineer`}</p>
+      <h4 className="pt-4">{name}</h4>
+      <p className="font-light text-balance">{title}</p>
     </div>
   )
 }
