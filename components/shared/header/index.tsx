@@ -2,12 +2,16 @@
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import style from "./Header.module.css";
 
 const Header = () => {
   const headerRef = useRef(null);
   const [visible, setVisible] = useState(false);
+
+
+  useEffect 
+
   return (
     <div className="fixed top-0 right-0 left-0 z-20">
       <header
@@ -77,7 +81,7 @@ const Header = () => {
       {/**Mobile */}
       <header
         ref={headerRef}
-        className={`flex lg:hidden justify-between items-center  bg-white relative py-3 px-5  w-full `}
+        className={`flex lg:hidden justify-between items-center bg-white relative py-3 px-5  w-full `}
       >
         <Link href="/">
           <Image src="/logo.jpg" width={300} height={53} alt="GDSC UNIBAN" />

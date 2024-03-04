@@ -13,7 +13,7 @@ const SpeakerCard = ({
   const alt = title ? `${title}, ${name}ʼs headshot` : `${name}ʼs headshot`
   return (
     <div className="text-center p-5 text-black">
-      <div className="bg-lightgrey rounded-[50%] w-36 h-36 mx-auto">
+      <div className=" rounded-[50%] w-36 h-36 mx-auto">
         <MyImage
           src={src}
           alt={alt}
@@ -23,7 +23,7 @@ const SpeakerCard = ({
         />
       </div>
       <h4 className="pt-4">{name}</h4>
-      <p className="font-light text-balance">{title || `Software Engineer`}</p>
+      <p className="font-light text-base text-balance">{title || `Software Engineer`}</p>
     </div>
   )
 }

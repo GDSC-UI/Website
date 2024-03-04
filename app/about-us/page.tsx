@@ -1,43 +1,77 @@
-import Organizers from "@/components/homepage/organizers";
-import Gallery from "@/components/homepage/organizers/gallery";
-import SpeakerCard from "@/components/shared/speaker";
-import { FourColGrid } from "@/components/ui/grid-container";
-import { HeroImage } from "@/components/ui/hero-image";
-import { Section } from "@/components/ui/section";
-import olapadeSrc from "@/public/organizers-images/olapade.jpg";
-import eniolaSrc from "@/public/organizers-images/EniolaOluwa.jpg";
-import oyeroSrc from "@/public/organizers-images/oyero.jpg";
-import toyyibahSrc from "@/public/organizers-images/Toyyibah.jpg";
-import obaloluwaSrc from "@/public/organizers-images/obaloluwa.jpg";
-import jenrolaSrc from "@/public/organizers-images/jenrola.jpg";
-import jesutomiSrc from "@/public/organizers-images/jesutomi.jpg";
-import matthewSrc from "@/public/organizers-images/matthew.jpg";
-import olaojoSrc from "@/public/organizers-images/olaojo.jpg";
-import princeSrc from "@/public/organizers-images/prince.jpg";
-import segunSrc from "@/public/organizers-images/segun.jpg";
-import temidayoSrc from "@/public/organizers-images/temidayo.jpg";
-import umorenSrc from "@/public/organizers-images/umoren.jpg";
-import victorSrc from "@/public/organizers-images/victor.jpg";
-import williamSrc from "@/public/organizers-images/william.jpg";
+import Gallery from "@/components/homepage/organizers/gallery"
+import SpeakerCard from "@/components/shared/speaker"
+import { FourColGrid } from "@/components/ui/grid-container"
+import { HeroImage } from "@/components/ui/hero-image"
+import { Section } from "@/components/ui/section"
+import eniolaSrc from "@/public/organizers-images/EniolaOluwa.jpg"
+import toyyibahSrc from "@/public/organizers-images/Toyyibah.jpg"
+import jenrolaSrc from "@/public/organizers-images/jenrola.jpg"
+import jesutomiSrc from "@/public/organizers-images/jesutomi.jpg"
+import matthewSrc from "@/public/organizers-images/matthew.jpg"
+import obaloluwaSrc from "@/public/organizers-images/obaloluwa.jpg"
+import olaojoSrc from "@/public/organizers-images/olaojo.jpg"
+import olapadeSrc from "@/public/organizers-images/olapade.jpg"
+import oyeroSrc from "@/public/organizers-images/oyero.jpg"
+import princeSrc from "@/public/organizers-images/prince.jpg"
+import segunSrc from "@/public/organizers-images/segun.jpg"
+import temidayoSrc from "@/public/organizers-images/temidayo.jpg"
+import umorenSrc from "@/public/organizers-images/umoren.jpg"
+import victorSrc from "@/public/organizers-images/victor.jpg"
+import williamSrc from "@/public/organizers-images/william.jpg"
 
 const ORGANIZERS = [
- { name: `Bukola Olapade`, src: olapadeSrc },
-  { name: `EniolaOluwa Bakare`, src: eniolaSrc },
-  { name: `Oyero Habibulah`, src: oyeroSrc },
-  { name: `Toyyibah Akinlusi`, src: toyyibahSrc },
-  { name: `Obaloluwa Animashaun`, src: obaloluwaSrc },
-  { name: `Jenrola Oluwaseun`, src: jenrolaSrc },
-  { name: `Jesutomi Oluwadare`, src: jesutomiSrc },
-  { name: `Matthew Oluwaseun`, src: matthewSrc },
-  { name: `Olaojo Oluwaseun`, src: olaojoSrc },
-  { name: `Prince Oluwatosin`, src: princeSrc },
-  { name: `Segun Oluwaseun`, src: segunSrc },
-  { name: `Temidayo Oluwaseun`, src: temidayoSrc },
-  { name: `Umoren Oluwaseun`, src: umorenSrc },
-  { name: `Victor Oluwaseun`, src: victorSrc },
-  { name: `William Oluwaseun`, src: williamSrc },
-  
-];
+  { name: `Bukola Olapade`, src: olapadeSrc, title: "Community Lead" },
+  { name: `EniolaOluwa Bakare`, src: eniolaSrc, title: "Community Co-lead" },
+  { name: `Oyero Habibulah`, src: oyeroSrc, title: "Technical Lead" },
+  { name: `Toyyibah Akinlusi`, src: toyyibahSrc, title: "Non-Technical Lead" },
+  {
+    name: `Obaloluwa Animashaun`,
+    src: obaloluwaSrc,
+    title: "Product Design(UI/UX ) Lead",
+  },
+  {
+    name: `Jenrola Odunolaoluwa`,
+    src: jenrolaSrc,
+    title: "AI Lead",
+  },
+  { name: `Jesutoni Aderibigbe`, src: jesutomiSrc, title: "Flutter Lead" },
+  { name: `Busoye Matthew`, src: matthewSrc, title: "Hardware/IOT Lead" },
+  {
+    name: `Olaojo Paul`,
+    src: olaojoSrc,
+    title: "Data Science and Engineering Lead",
+  },
+  {
+    name: `Prince Ogabi`,
+    src: princeSrc,
+    title: "Cloud Development Lead",
+  },
+  {
+    name: `Showunmi Segun`,
+    src: segunSrc,
+    title: "Frontend Development Lead",
+  },
+  {
+    name: `Temidayo Oluwaseun`,
+    src: temidayoSrc,
+    title: "Software QA Engineering Lead",
+  },
+  {
+    name: `Umoren Ememobong`,
+    src: umorenSrc,
+    title: "Data Analyst Lead",
+  },
+  {
+    name: `Victor Afia`,
+    src: victorSrc,
+    title: "Product Management Lead",
+  },
+  {
+    name: `William Oluwaseun`,
+    src: williamSrc,
+    title: "Backend Development Lead",
+  },
+]
 
 export default function Page() {
   return (
@@ -134,30 +168,30 @@ export default function Page() {
             <h4 className="font-bold text-2xl ">Empowerment</h4>
             <p className="text-grey pt-5 text-base font-light">
               Igniting potential, sparking change. At GDSC, we believe in the
-              transformative power of empowerment. We&apos;re here to see you unleash
-              your creativity, seize opportunities, and chart your course
-              towards greatness.
+              transformative power of empowerment. We&apos;re here to see you
+              unleash your creativity, seize opportunities, and chart your
+              course towards greatness.
             </p>
           </div>
         </div>
       </section>
 
       <section className="px-4 py-16  md:px-28 md:py-20 bg-lightblue">
-      <h3 className="text-3xl font-bold text-center  md:text-5xl">
-        Meet Our Organizers
-      </h3>
-      <p className="max-w-2xl mx-auto text-grey mt-6 mb-10 font-light text-center">
-        Meet our chefs. Get to know the people behind the magic; the brains
-        behind the scene.
-      </p>
+        <h3 className="text-3xl font-bold text-center  md:text-5xl">
+          Meet Our Organizers
+        </h3>
+        <p className="max-w-2xl mx-auto text-grey mt-6 mb-10 font-light text-center">
+          Meet our chefs. Get to know the people behind the magic; the brains
+          behind the scene.
+        </p>
 
-      <FourColGrid>
-        {ORGANIZERS.map((organizer) => (
-          <SpeakerCard key={organizer.name} {...organizer} />
-        ))}
-      </FourColGrid>
-    </section>
+        <FourColGrid>
+          {ORGANIZERS.map((organizer) => (
+            <SpeakerCard key={organizer.name} {...organizer} />
+          ))}
+        </FourColGrid>
+      </section>
       <Gallery />
     </section>
-  );
+  )
 }
