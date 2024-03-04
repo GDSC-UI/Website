@@ -12,7 +12,7 @@ const SpeakerCard = ({
 }) => {
   const alt = title ? `${title}, ${name}ʼs headshot` : `${name}ʼs headshot`
   return (
-    <div className="text-center p-5 text-black">
+    <div className="text-center p-5 text-black flex flex-col justify-center items-center">
       <div className=" rounded-[50%] w-36 h-36 mx-auto">
         <MyImage
           src={src}

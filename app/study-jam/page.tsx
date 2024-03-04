@@ -16,15 +16,11 @@ export default function Page() {
           Dive into the coding dojo with GDSC Study Jams! Our Study Jams are the
           turbo boosters for your tech quest, blending learning with laughter
           and algorithms with amazement.
-          <br /> These sessions arenʼt just about cracking the code; theyʼre
+          <br /> <br /> These sessions arenʼt just about cracking the code; theyʼre
           about cracking open a world of possibilities. With hands-on
           activities, expert insights, and a sprinkle of camaraderie, our Study
           Jams transform the daunting into the delightful, one line of code at a
-          time. It doesnʼt matter if youʼre a noob or an expert, buckle up for
-          an adventure where bugs are features in disguise, errors are stepping
-          stones, and every line of code is a brushstroke on the canvas of
-          creation. Letʼs jam, learn, and code our way to the future, one
-          session at a time
+          time. 
         </p>
         <Button>Join now</Button>
       </FlexContainer>
@@ -74,7 +70,7 @@ function Card() {
     <div className="text-left">
       <div className="bg-lightgrey h-72"></div>
       <div className="px-5 py-10 space-y-5 border">
-        <h3>Study Jams</h3>
+        <h3 className="text-black">Study Jams</h3>
         <p className="text-grey">
           Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
           enim nibh ac neque viverra. Scelerisque neque elit tempus metus
