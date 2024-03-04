@@ -6,10 +6,10 @@ import oyeroSrc from "./organizers-images/oyero.jpg";
 import toyyibahSrc from "./organizers-images/Toyyibah.jpg";
 
 const ORGANIZERS = [
-  { name: `Bukola Olapade`, src: bukolaSrc },
-  { name: `EniolaOluwa Bakare`, src: eniolaSrc },
-  { name: `Oyero Habibulah`, src: oyeroSrc },
-  { name: `Toyyibah Akinlusi`, src: toyyibahSrc },
+  { name: `Bukola Olapade`, src: bukolaSrc, role: "Community Lead" },
+  { name: `EniolaOluwa Bakare`, src: eniolaSrc, role: "Community Co-lead" },
+  { name: `Oyero Habibulah`, src: oyeroSrc, role: "Technical Lead" },
+  { name: `Toyyibah Akinlusi`, src: toyyibahSrc, role: "Non-Technical Lead"},
 ];
 
 const Organizers = () => {

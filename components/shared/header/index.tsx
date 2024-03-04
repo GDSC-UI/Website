@@ -1,9 +1,9 @@
 "use client";
+import Button from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import style from "./Header.module.css";
-import Button from "@/components/ui/Button";
 
 const Header = () => {
   const headerRef = useRef(null);
@@ -92,13 +92,19 @@ const Header = () => {
                           lg:flex-row justify-between lg:items-center lg:space-x-24`}
           >
             <ul className="flex flex-col gap-6 lg:flex-row space-y-2 lg:space-y-0">
-              <Link href="/" className="text-black text-base font-medium">
+              <Link
+                href="/about-us"
+                className="text-black text-base font-light"
+              >
                 About Us
               </Link>
-              <Link href="/" className="text-black text-base font-medium">
+              <Link href="/events" className="text-black text-base font-light">
                 Events
               </Link>
-              <Link href="/" className="text-black text-base font-medium">
+              <Link
+                href="#programmes"
+                className="text-black text-base font-light"
+              >
                 Programs
               </Link>
             </ul>
