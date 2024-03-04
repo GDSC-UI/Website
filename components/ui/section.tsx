@@ -21,6 +21,6 @@ export const Section = ({
       {content && <p className="font-medium">{content}</p>}
       <h2 className="capitalize">{heading}</h2>
     </div>
-    <div className="text-grey space-y-4">{children}</div>
+    <div className="text-grey space-y-10">{children}</div>
   </section>
 )

@@ -113,7 +113,7 @@ function SectionList({
   const List = ordered ? `ol` : `ul`
   return (
     <section className="space-y-10">
-      <h2 className="capitalize">{heading}</h2>
+      <h2 className="capitalize text-center">{heading}</h2>
       <List
         className={clsx(
           `text-grey space-y-4 list-inside`,
