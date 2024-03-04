@@ -23,23 +23,9 @@ export default function Page() {
       </section>
       <PastEvents />
       <Section content="how does GDSC help?" heading="our gallery">
-        <p className="text-grey">
-          Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
-          enim nibh ac neque viverra. Scelerisque neque elit tempus metus
-          interdum luctus eget eu. Senectus lorem nec habitasse libero senectus
-          proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis
-          fermentum volutpat.
-        </p>
-        <p className="text-grey">
-          Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
-          enim nibh ac neque viverra. Scelerisque neque elit tempus metus
-          interdum luctus eget eu. Senectus lorem nec habitasse libero senectus
-          proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis
-          fermentum volutpat. Lorem ipsum dolor sit amet consectetur. Egestas
-          turpis integer et sit enim nibh ac neque viverra. Scelerisque neque
-          elit tempus metus interdum luctus eget eu. Senectus lorem nec
-          habitasse libero senectus proin velit. Dis aliquam convallis donec
-          adipiscing pulvinar enim duis fermentum volutpat.
+        <p className="text-balance">
+          A picture is worth a thousand words, they say. So, why donʼt you dive
+          into our gallery to see for yourself what we do and how we do it?
         </p>
         <div className="flex flex-col items-center justify-center gap-5">
           <Button className="">Join GDSC UNIBADAN</Button>

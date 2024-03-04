@@ -12,11 +12,7 @@ export default function Page() {
     <div>
       <HeroImage />
       <Section heading="our gallery" content="Feed your eyes">
-        <p>
-          Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
-          enim nibh ac neque viverra. Scelerisque neque elit tempus metus
-          interdum luctus eget eu.
-        </p>
+        <p>Relive our inspiring experiences in pixels.</p>
       </Section>
       <section className="mx-[7.5rem] space-y-10 mber-20">
         <Gallery />
