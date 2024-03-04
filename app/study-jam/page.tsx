@@ -30,22 +30,18 @@ export default function Page() {
       </FlexContainer>
       <Section content="What do  we do?" heading="how it works?">
         <p>
-          Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
-          enim nibh ac neque viverra. Scelerisque neque elit tempus metus
-          interdum luctus eget eu. Senectus lorem nec habitasse libero senectus
-          proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis
-          fermentum volutpat.
+          These sessions arenʼt just about cracking the code; theyʼre about
+          cracking open a world of possibilities. With hands-on activities,
+          expert insights, and a sprinkle of camaraderie, our Study Jams
+          transform the daunting into the delightful, one line of code at a
+          time.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
-          enim nibh ac neque viverra. Scelerisque neque elit tempus metus
-          interdum luctus eget eu. Senectus lorem nec habitasse libero senectus
-          proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis
-          fermentum volutpat. Lorem ipsum dolor sit amet consectetur. Egestas
-          turpis integer et sit enim nibh ac neque viverra. Scelerisque neque
-          elit tempus metus interdum luctus eget eu. Senectus lorem nec
-          habitasse libero senectus proin velit. Dis aliquam convallis donec
-          adipiscing pulvinar enim duis fermentum volutpat.
+          It doesnʼt matter if youʼre a noob or an expert, buckle up for an
+          adventure where bugs are features in disguise, errors are stepping
+          stones, and every line of code is a brushstroke on the canvas of
+          creation. Letʼs jam, learn, and code our way to the future, one
+          session at a time!
         </p>
       </Section>
       <Section content="What do  we do?" heading="previous study jams">
