@@ -73,7 +73,8 @@
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     @apply font-bold;
   }
 
@@ -87,6 +88,10 @@
 
   h3 {
     @apply text-2xl
+  }
+
+  h4 {
+    @apply text-lg
   }
 
   p,
