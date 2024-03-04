@@ -3,7 +3,6 @@ import { FlexContainer } from "@/components/ui/flex-container"
 import { Section } from "@/components/ui/section"
 import { SpeakerCardsView } from "./speakers"
 import { PanelView } from "./panel-view"
-import { FourColGrid } from "@/components/ui/grid-container"
 import { Gallery } from "@/components/ui/gallery"
 import { MyImage } from "@/components/ui/image"
 import backdropSrc from "./techquest-images/backdrop.jpg"
@@ -40,26 +39,29 @@ export default function Page() {
           building expertise and promoting the problem-solving mindset of
           technology. We have lined up several events that will help us achieve
           this goal. Amongst these events is one of our two flagship events -
-          TechQuest.TechQuest was a one-day event meticulously crafted to assist
-          newbies and tech enthusiasts in discovering their ideal tech journey
-          based on their unique interests, educational backgrounds, or personal
-          passions. Our primary mission was to unveil the captivating realm of
-          technology, with a strong emphasis on nurturing the fundamental
-          problem-solving mindset at its core
+          <span className="text-blue">TechQuest</span>.
+          <br />
+        </p>
+        <p>
+          TechQuest was a one-day event meticulously crafted to assist newbies
+          and tech enthusiasts in discovering their ideal tech journey based on
+          their unique interests, educational backgrounds, or personal passions.
+          Our primary mission was to unveil the captivating realm of technology,
+          with a strong emphasis on nurturing the fundamental problem-solving
+          mindset at its core.
         </p>
       </Section>
       <main className="bg-lightblue">
         <Section heading="meet our speakers">
           <p>
-            Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et
-            sit enim nibh ac neque viverra.
+            Unveiling the voices and faces that are driving positive change here
           </p>
           <SpeakerCardsView />
         </Section>
         <Section heading="panel discussion">
           <p>
-            Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et
-            sit enim nibh ac neque viverra.
+            Join the conversation with our diverse thought leaders, ask your
+            questions and gain invaluable insight.
           </p>
           <PanelView />
         </Section>
@@ -74,10 +76,7 @@ export default function Page() {
           />
         </Section>
         <Section heading="event pictures">
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et
-            sit enim nibh ac neque viverra.
-          </p>
+          <p>Relive our inspiring experiences in pixels.</p>
           <Gallery />
           <Button className="inline-block">SEE MORE</Button>
         </Section>

@@ -10,14 +10,44 @@ import alagbaSrc from "./speakers-images/alagba.jpg"
 import joshuaSrc from "./speakers-images/joshua.jpg"
 
 const SPEAKERS = [
-  { name: `Adams  Paul`, src: paulSrc },
-  { name: `Akinkunmi Gafar`, src: gafarSrc },
-  { name: `Dara Sobaloju`, src: daraSrc },
-  { name: `David Oladapo`, src: davidSrc },
-  { name: `Kayode Idowu`, src: kayodeSrc },
-  { name: `Mekuleyi Micheal`, src: michaelSrc },
-  { name: `Ntongha Alagba`, src: alagbaSrc },
-  { name: `Ajadi Joshua`, src: joshuaSrc },
+  { name: `Adams  Paul`, src: paulSrc, title: `Engineering Manager, Selar` },
+  { name: `Akinkunmi Gafar`, src: gafarSrc, title: `CEO, Interpocket` },
+  {
+    name: `Dara Sobaloju`,
+    src: daraSrc,
+    title: `Product Designer,
+  Treepz Inc`,
+  },
+  {
+    name: `David Oladapo`,
+    src: davidSrc,
+    title: `Growth Manager,
+  Clane`,
+  },
+  {
+    name: `Kayode Idowu`,
+    src: kayodeSrc,
+    title: `Founder of Mayhaven,
+  COO, Cudium`,
+  },
+  {
+    name: `Mekuleyi Micheal`,
+    src: michaelSrc,
+    title: `Snr DevOps Engineer,
+  Keynote Speaker`,
+  },
+  {
+    name: `Ntongha Alagba`,
+    src: alagbaSrc,
+    title: `Growth specialist,
+  Norebase`,
+  },
+  {
+    name: `Ajadi Joshua`,
+    src: joshuaSrc,
+    title: `CEO & Co-founder,
+  District 7`,
+  },
 ]
 
 export function SpeakerCardsView() {
