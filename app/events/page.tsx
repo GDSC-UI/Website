@@ -11,14 +11,14 @@ export default function Page() {
   return (
     <div>
       <HeroImage />
-      <div className="text-center space-y-5">
+      <div className="text-center space-y-5 px-8 md:px-[7.5rem]">
         <h2>Upcoming Events</h2>
         <p className="text-grey">
           Interesting times ahead, guys! Stay informed and up-to-date about our
           upcoming events.
         </p>
       </div>
-      <section className="py-20 px-[7.5rem]">
+      <section className="py-20 px-8 md:px-[7.5rem]">
         <EventsCardView />
       </section>
       <PastEvents />
@@ -60,7 +60,7 @@ function EventCard() {
 
 function EventsCardView() {
   return (
-    <main className="flex gap-10">
+    <main className="flex gap-10 flex-wrap md:flex-nowrap">
       {[1, 2, 3].map((num) => (
         <EventCard key={num} />
       ))}

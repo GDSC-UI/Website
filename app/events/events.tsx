@@ -11,17 +11,17 @@ import {
 
 export function PastEvents() {
   return (
-    <aside className="bg-lightblue py-20 px-[7.5rem] space-y-10">
+    <aside className="bg-lightblue py-20 px-8 md:px-[7.5rem] space-y-10">
       <div className="space-y-5">
         <h2>Directory of Past Events</h2>
-        <header className="bg-white p-5 flex justify-evenly items-center">
+        <header className="bg-white p-5 flex max-sm:justify-start max-sm:gap-4 justify-evenly items-center flex-wrap md:flex-nowrap">
           <p>Take a peak at the good and mischief weʼve been up to lately</p>
-          <label className="flex  items-center bg-lightblue pl-2 rounded-[.5rem]">
+          <label className="flex items-center bg-lightblue pl-2 rounded-[.5rem]">
             <Search />
             <input
               type="search"
               placeholder="Search"
-              className="p-2 placeholder:text-black rounded-[.5rem] bg-inherit focus:placeholder:opacity-65"
+              className="p-2 placeholder:text-black rounded-[.5rem] bg-inherit focus:placeholder:opacity-65 w-40"
               id="search"
             />
           </label>
@@ -56,8 +56,8 @@ function Dropdown() {
 
 function PastEventCard() {
   return (
-    <div className="rounded-2xl p-5 bg-white flex gap-[1.25rem]">
-      <div className="bg-lightgrey rounded-lg h-52 w-72"></div>
+    <div className="rounded-2xl p-5 bg-white flex gap-[1.25rem] max-md:flex-col max-md:items-center">
+      <div className="bg-lightgrey rounded-lg h-52 w-72 max-w-full"></div>
       <div className="self-center">
         <h3>Global Gamers Challenge by Flutter and Global Citizen</h3>
         <span className="inline-block">
