@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
-import { PropsWithChildren } from "react";
+import { cn } from "@/lib/utils"
+import { PropsWithChildren, ReactNode } from "react"
 
 export const Section = ({
   children,
@@ -7,9 +7,9 @@ export const Section = ({
   heading,
   className,
 }: PropsWithChildren & {
-  heading: string;
-  content?: string;
-  className?: string;
+  heading: string
+  content?: string | ReactNode
+  className?: string
 }) => (
   <section
     className={cn(
@@ -17,10 +17,10 @@ export const Section = ({
       className
     )}
   >
-    {content && <p className="font-medium">{content}</p>}
-    <h1 className="text-3xl md:text-5xl capitalize max-w-xl mx-auto mb-5">
-      {heading}
-    </h1>
-    {children}
+    <div className="space-y-5">
+      {content && <p className="font-medium">{content}</p>}
+      <h2 className="capitalize">{heading}</h2>
+    </div>
+    <div className="text-grey space-y-4">{children}</div>
   </section>
-);
+)
