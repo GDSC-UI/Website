@@ -1,13 +1,13 @@
 import { Search } from "lucide-react"
-// import {
-//   Select,
-//   SelectContent,
-//   SelectGroup,
-//   SelectItem,
-//   SelectLabel,
-//   SelectTrigger,
-//   SelectValue,
-// } from "@/components/ui/select"
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 export function PastEvents() {
   return (
@@ -25,7 +25,7 @@ export function PastEvents() {
               id="search"
             />
           </label>
-          {/* <Dropdown /> */}
+          <Dropdown />
         </header>
       </div>
       <main>
@@ -35,24 +35,24 @@ export function PastEvents() {
   )
 }
 
-// function Dropdown() {
-//   return (
-//     <Select>
-//       <SelectTrigger className="w-28">
-//         <SelectValue placeholder="All years" />
-//       </SelectTrigger>
-//       <SelectContent>
-//         <SelectGroup>
-//           <SelectLabel>Years</SelectLabel>
-//           <SelectItem value="2024">2024</SelectItem>
-//           <SelectItem value="2023">2023</SelectItem>
-//           <SelectItem value="2022">2022</SelectItem>
-//           <SelectItem value="2021">2021</SelectItem>
-//         </SelectGroup>
-//       </SelectContent>
-//     </Select>
-//   )
-// }
+function Dropdown() {
+  return (
+    <Select>
+      <SelectTrigger className="w-28">
+        <SelectValue placeholder="All years" />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectGroup>
+          <SelectLabel>Years</SelectLabel>
+          <SelectItem value="2024">2024</SelectItem>
+          <SelectItem value="2023">2023</SelectItem>
+          <SelectItem value="2022">2022</SelectItem>
+          <SelectItem value="2021">2021</SelectItem>
+        </SelectGroup>
+      </SelectContent>
+    </Select>
+  )
+}
 
 function PastEventCard() {
   return (
