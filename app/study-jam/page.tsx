@@ -55,7 +55,7 @@ export default function Page() {
         <CardsView />
         <Button className="inline-block uppercase">See more</Button>
       </Section>
-      <main className="text-center bg-lightblue py-20 flex-col space-y-10">
+      <main className="text-center bg-lightblue py-20 flex-col space-y-10 px-8 md:px-[7.5rem]">
         <div className="space-y-5">
           <h1>Meet our Team Leads</h1>
           <p className="text-grey">
