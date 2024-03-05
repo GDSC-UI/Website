@@ -5,7 +5,7 @@ import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import style from "./Header.module.css"
 import { usePathname } from "next/navigation"
-import { Menu } from 'lucide-react';
+import { Menu } from "lucide-react"
 
 const Header = () => {
   const headerRef = useRef(null)
@@ -14,7 +14,7 @@ const Header = () => {
 
   useEffect(() => {
     setVisible(false)
-  },[pathname])
+  }, [pathname])
 
   return (
     <div className="fixed top-0 right-0 left-0 z-20">
@@ -28,13 +28,22 @@ const Header = () => {
         </Link>
 
         <div className="flex gap-10">
-          <Link href="/about-us" className="text-black text-base font-light">
+          <Link
+            href="/about-us"
+            className="text-black text-base font-light hover:text-blue transition-all duration-300"
+          >
             About Us
           </Link>
-          <Link href="/events" className="text-black text-base font-light">
+          <Link
+            href="/events"
+            className="text-black text-base font-light  hover:text-blue  transition-all duration-300"
+          >
             Events
           </Link>
-          <Link href="#programmes" className="text-black text-base font-light">
+          <Link
+            href="/programs"
+            className="text-black text-base font-light  hover:text-blue  transition-all duration-300"
+          >
             Programs
           </Link>
           <div className="dropdown z-50">
@@ -102,16 +111,16 @@ const Header = () => {
             <ul className="flex flex-col gap-6 lg:flex-row space-y-2 lg:space-y-0">
               <Link
                 href="/about-us"
-                className="text-black text-base font-light"
+                className="text-black text-2xl  font-medium hover:text-blue  transition-all duration-300"
               >
                 About Us
               </Link>
-              <Link href="/events" className="text-black text-base font-light">
+              <Link href="/events" className="text-black text-2xl  font-medium hover:text-blue  transition-all duration-300">
                 Events
               </Link>
               <Link
-                href="#programmes"
-                className="text-black text-base font-light"
+                href="/programs"
+                className="text-black text-2xl font-medium hover:text-blue  transition-all duration-300"
               >
                 Programs
               </Link>
@@ -128,7 +137,7 @@ const Header = () => {
                           appearance-none outline-none text-4xl lg:hidden 
                           cursor-default transition-all duration-300 hover:opacity-70  p-2 md:p-1 flex justify-center items-center box-border `}
         >
-              <Menu size={40}/>
+          <Menu size={40} />
         </button>
       </header>
     </div>

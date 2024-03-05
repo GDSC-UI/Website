@@ -79,10 +79,9 @@ export default function Page() {
       <HeroImage />
 
       <Section
-        content="How does GDSC help?"
         heading="Developer Student Club University of Ibadan"
       >
-        <p className="text-grey">
+        <p className="text-grey text-base">
           GDSC serves as a launchpad for young developers, offering a dynamic
           platform where students can hone their skills, explore innovative
           technologies, and collaborate on exciting projects. Through workshops,
@@ -91,12 +90,12 @@ export default function Page() {
           today&apos;s tech-driven world.
         </p>
 
-        <p className="text-grey">
+        <p className="text-grey text-base">
           Here, students have access to a vibrant community of like-minded peers
           and industry professionals who are passionate about technology and
           eager to share their expertise.
         </p>
-        <p className="text-grey">
+        <p className="text-grey text-base">
           GDSC also provides a supportive environment where you can ask
           questions, seek guidance, and forge valuable connections that can last
           a lifetime.

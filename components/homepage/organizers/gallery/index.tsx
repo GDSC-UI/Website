@@ -3,9 +3,6 @@ import Button from "@/components/ui/Button"
 const Gallery = () => {
   return (
     <section className="text-center px-6 py-10 md:px-28 ">
-      <h4 className="max-w-xl font-bold mx-auto pt-10 text-3xl md:text-5xl">
-        Our Gallery
-      </h4>
       <div className="grid my-10 w-full h-[600px] gap-5 grid-cols-1 md:grid-rows-11 md:grid-cols-4">
         <div className="blue rounded-lg border-blue border-2 bg-lightgrey md:row-span-11 md:col-span-2"></div>
         <div className="green rounded-lg border-green border-2  bg-lightgrey md:row-span-5 md:col-span-2"></div>
@@ -14,7 +11,11 @@ const Gallery = () => {
       </div>
 
       <div className="max-w-3xl mx-auto text-center mt-5">
-        <p className="font-normal text-grey">
+        <h4 className="max-w-xl font-bold mx-auto pt-10 text-3xl md:text-5xl">
+          Our Gallery
+        </h4>
+
+        <p className="font-normal mt-5 text-grey">
           A picture is worth a thousand words, they say. So, why don&apos;t you
           dive into our gallery to see for yourself what we do and how we do it?
         </p>

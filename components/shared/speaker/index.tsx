@@ -5,6 +5,7 @@ const SpeakerCard = ({
   name,
   src,
   title,
+
 }: {
   name: string
   src: StaticImageData | string

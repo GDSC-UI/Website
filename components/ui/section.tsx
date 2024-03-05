@@ -12,7 +12,10 @@ export const Section = ({
   className?: string
 }) => (
   <section
-    className={cn(`space-y-8 mx-8 md:mx-[7.5rem] py-10 text-center`, className)}
+    className={cn(
+      `space-y-8 mx-8 md:mx-[7.5rem] py-5 md:py-10 text-center`,
+      className,
+    )}
   >
     <div className="space-y-5">
       {content && <p className="font-medium">{content}</p>}
