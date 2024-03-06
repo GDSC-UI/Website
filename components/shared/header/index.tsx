@@ -8,13 +8,29 @@ import { usePathname } from "next/navigation"
 import { Menu } from "lucide-react"
 
 const Header = () => {
-  const headerRef = useRef(null)
+  const headerRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname()
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
     setVisible(false)
+
   }, [pathname])
+
+
+  useEffect(() => {
+    const handleClickOutside = (event:MouseEvent) => {
+      if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
+        setVisible(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="fixed top-0 right-0 left-0 z-20">

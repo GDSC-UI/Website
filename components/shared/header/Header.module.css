@@ -1,0 +1,18 @@
+.drop_visible {
+  animation: drop 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0.3;
+    transform: translateY(-10%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

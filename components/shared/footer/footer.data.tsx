@@ -1,13 +1,10 @@
 const footerLinks = {
   links: {
-    Students: [
-      { title: "Join GDSC", route: "/" },
-      { title: "Volunteer", route: "/" },
-    ],
+    Students: [{ title: "Join GDSC", route: "/" }],
 
-    Business: [
+    Learn: [
       { title: "About us", route: "/about-us" },
-      { title: "Blog", route: "/blog" },
+      { title: "Contact Us", route: "/contact-us" },
       { title: "Organizers", route: "/organizers" },
     ],
 
@@ -17,6 +14,6 @@ const footerLinks = {
       { title: "Study Jam", route: "/study-jam" },
     ],
   },
-};
+}
 
-export { footerLinks };
+export { footerLinks }
