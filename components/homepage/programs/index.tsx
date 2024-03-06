@@ -4,7 +4,7 @@ const Programmes = () => {
   return (
     <section className="bg-lightblue px-6 md:px-28 md:py-20 py-14">
       <h3 className=" md:text-5xl text-3xl text-center">Our Programmes</h3>
-      <p className="font-light text-center mx-auto pt-5 max-w-3xl">
+      <p className="font-normal text-center mx-auto pt-5 max-w-3xl text-grey">
         Explore all we do at the GDSC, University of Ibadan. There&apos;s
         something for everyone. Come along now, let&apos;s see what tickles your
         fancy.
