@@ -22,18 +22,6 @@ export default function Page() {
         <EventsCardView />
       </section>
       <PastEvents />
-      <Section content="how does GDSC help?" heading="our gallery">
-        <p className="text-balance">
-          A picture is worth a thousand words, they say. So, why donʼt you dive
-          into our gallery to see for yourself what we do and how we do it?
-        </p>
-        <div className="flex flex-col items-center justify-center gap-5">
-          <Button className="">Join GDSC UNIBADAN</Button>
-          <Button variant="outline" className="font-bold">
-            See more photos
-          </Button>
-        </div>
-      </Section>
     </div>
   )
 }

@@ -7,6 +7,7 @@ interface ProgramItemProps {
   route: string
   background?: boolean
   reverse?: boolean
+  image: string
 }
 
 const ProgramItem = ({
@@ -16,12 +17,13 @@ const ProgramItem = ({
   route,
   background,
   reverse,
+  image,
 }: ProgramItemProps) => {
   return (
     <div
       className={` flex flex-wrap md:px-28 px-6 items-center gap-5  justify-between  py-16 ${background ? "bg-lightblue" : null} ${reverse ? "flex-row-reverse" : null}`}
     >
-      <div className="bg-lightgrey w-full h-80 md:w-[570px] md:h-[540px]"></div>
+      <Image src={image} alt="" className="w-full md:w-[570px] md:h-[540px]"  width={570} height={320}/>
       <div className="max-w-xl">
         <h1 className="text-3xl md:text-5xl">{title}</h1>
         <p className="text-grey py-6">{description}</p>

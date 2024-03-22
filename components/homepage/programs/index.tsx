@@ -13,23 +13,27 @@ const Programmes = () => {
       <div className="flex mt-10 gap-10 items-center justify-start flex-wrap">
         <ProgramCard
           classnames={`w-[26rem]`}
+          image="/program-images/study-jam.jpg"
           title="Study Jams"
           route="/study-jam"
           description="Study Jam Sessions represent a comprehensive 6-8 week program tailored to assist individuals, particularly beginners, in navigating a specific technology stack. During each weekly session, participants are encouraged to dedicate at least 1-2 hours to their learning journey."
         />
         <ProgramCard
           title="Techquest"
+          image="/program-images/techquest.jpg"
           route="/tech-quest"
           description="TechQuest was a one-day event meticulously crafted to assist newbies and tech enthusiasts in discovering their ideal tech journey based on their unique interests, educational backgrounds, or personal passions. Our primary mission was to unveil the captivating realm of technology"
         />
         <ProgramCard
           title="NextHack"
+          image="/program-images/nexthack.jpg"
           route="/next-hack"
           description="NexTech Hack is a groundbreaking hackathon hosted by the Google Developer Student Club (GDSC) at the University of Ibadan. It is a premier event designed to bridge the gap between technical skills and practical problem-solving, while fostering innovation and collaboration among students in the South-West region of Nigeria."
         />
         <ProgramCard
           title="Google Solutions Challenge"
           route="/next-hack"
+          image="/program-images/solutions-challenge.jpg"
           description="The Google Solutions Challenge stands as an impactful program orchestrated by GDSC (Google Developer Student Clubs) with the primary objective of empowering university students to address local challenges by harnessing the capabilities of Google technologies."
         />
       </div>

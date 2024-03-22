@@ -17,6 +17,7 @@ const programs = [
     ],
     route: "/study-jam",
     background: true,
+    image: '/programs/study-jam.jpg',
   },
 
   {
@@ -31,6 +32,7 @@ const programs = [
     route: "/tech-quest",
     background: false,
     reverse: true,
+    image: '/programs/techquest.jpg'
   },
 
   {
@@ -44,6 +46,7 @@ const programs = [
     ],
     route: "/next-hack",
     background: true,
+    image: '/programs/nexthack.jpg'
   },
 ]
 export default function Page() {
@@ -69,6 +72,7 @@ export default function Page() {
             about={program.about}
             background={program.background}
             reverse={program.reverse}
+            image={program.image}
           />
         ))}
       </section>

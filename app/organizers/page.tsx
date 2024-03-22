@@ -1,22 +1,25 @@
-import Button from "@/components/ui/Button";
-import TeamCard from "@/components/ui/Teamcard";
-import organizers from "@/public/data/organizers.json";
+import Button from "@/components/ui/Button"
+import TeamCard from "@/components/ui/Teamcard"
+import { HeroImage } from "@/components/ui/hero-image"
+import { team } from "./team.data"
 
 export const metadata = {
   title: `Organizers`,
-};
+}
 
 export default function Page() {
   return (
     <div>
       <section className="bg-lightblue px-8 md:px-20 py-20">
-        <div className="bg-lightgrey w-full h-80 my-10"></div>
-        <h3 className="font-bold text-3xl md:text-5xl max-w-2xl mx-auto text-center">
-          Without them, there would be no app or website
-        </h3>
-        <p className="max-w-xl mx-auto text-center mt-4">
-          Here are profile of the amazing people who worked on the website
-        </p>
+        <HeroImage />
+        <div className="text-center space-y-5 px-8 md:px-[7.5rem]">
+          <h2>Meet the Team</h2>
+          <p className="text-grey">
+            It&apos;s team work that makes the dream work! Take a look at the
+            team behind all you see. The various parts of our enigma, if you
+            will
+          </p>
+        </div>
       </section>
       <section className="bg-white">
         <nav className="md:flex hidden py-10 px-10 md:px-28 justify-between items-center border-b border-blue">
@@ -39,23 +42,23 @@ export default function Page() {
           </Button>
         </nav>
 
-        <div className="flex justify-evenly py-10 gap-8 flex-wrap">
-          {organizers.map((item) => (
+        <div className="flex px-6 items-start  md:justify-evenly py-10 gap-y-16 gap-x-3 md:gap-y-24 flex-wrap">
+          {team.map((item) => (
             <TeamCard
               key={item.name}
               name={item.name}
-              role={item.role}
+              role={item.title}
               description={item.description}
-              image={item.image}
-              github={item.github}
-              linkedIn={item.github}
-              twitter={item.twitter}
-              portfolio={item.twitter}
+              image={item.src}
+              github={item.socials.github}
+              linkedIn={item.socials.linkedin}
+              twitter={item.socials.twitter}
+              website={item.socials.website}
             />
           ))}
         </div>
       </section>
     </div>
-  );
+  )
 }
 //
