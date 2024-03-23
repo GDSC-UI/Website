@@ -1,5 +1,5 @@
 import eniolaSrc from "./organizers-images/EniolaOluwa.jpg"
-import toyyibahSrc from "./organizers-images/Toyyibah.jpg"
+import toyyibahSrc from "./organizers-images/toyyibah.jpg"
 import bukolaSrc from "./organizers-images/olapade.jpg"
 import oyeroSrc from "./organizers-images/oyero.jpg"
 import azeezatSrc from "./organizers-images/azeezat.jpg"
