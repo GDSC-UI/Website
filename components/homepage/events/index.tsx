@@ -38,7 +38,7 @@ const ExploreEvents = () => {
           image={imageThree}
           title="Navigating Through The Hurdles in the Flutterverse"
           route="https://gdsc.community.dev/events/details/developer-student-clubs-university-of-ibadan-presents-navigating-through-the-hurdles-in-the-flutterverse/"
-          description="NJoin us for an exciting and insightful speaker session as we host a senior mobile engineer who has recently earned the prestigious title...."
+          description="Join us for an exciting and insightful speaker session as we host a senior mobile engineer who has recently earned the prestigious title...."
         />
       </div>
 

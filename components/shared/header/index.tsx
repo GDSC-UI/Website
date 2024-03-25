@@ -100,6 +100,7 @@ const Header = () => {
         </div>
 
         <Button
+        asLink="https://gdsc.community.dev/university-of-ibadan/"
           variant="primary"
           className="w-36 md:w-[196px] h-14 font-medium inline-block"
         >

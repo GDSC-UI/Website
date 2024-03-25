@@ -68,18 +68,13 @@ const Gallery = () => {
         </p>
 
         <Button
+          asLink="https://gdsc.community.dev/university-of-ibadan/"
           variant="primary"
           className="w-[196px] h-14 font-medium inline-block ml-6 mt-6"
         >
           Join GDSC UNIBAN
         </Button>
 
-        <Button
-          variant="transparent"
-          className="w-[196px] h-14 font-medium inline-block ml-6 mt-6"
-        >
-          Join GDSC UNIBAN
-        </Button>
       </div>
     </section>
   )

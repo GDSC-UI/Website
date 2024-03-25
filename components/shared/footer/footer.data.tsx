@@ -1,6 +1,6 @@
 const footerLinks = {
   links: {
-    Students: [{ title: "Join GDSC", route: "/" }],
+    Students: [{ title: "Join GDSC", route: "https://gdsc.community.dev/university-of-ibadan/" }],
 
     Learn: [
       { title: "About us", route: "/about-us" },
