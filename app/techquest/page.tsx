@@ -3,7 +3,7 @@ import { FlexContainer } from "@/components/ui/flex-container"
 import { Section } from "@/components/ui/section"
 import { SpeakerCardsView } from "./speakers"
 import { PanelView } from "./panel-view"
-import { Gallery } from "@/components/ui/gallery"
+import { HalfGallery } from "@/components/ui/gallery"
 import { MyImage } from "@/components/ui/image"
 import backdropSrc from "./techquest-images/backdrop.jpg"
 import imageSrc from "./tech-quest.jpg"
@@ -82,7 +82,7 @@ export default function Page() {
         </Section>
         <Section heading="event pictures">
           <p>Relive our inspiring experiences in pixels.</p>
-          <Gallery />
+          <HalfGallery />
           <Button className="inline-block">SEE MORE</Button>
         </Section>
       </main>
