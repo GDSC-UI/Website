@@ -14,6 +14,7 @@ const Hero = () => {
           curiosity ignites knowledge, and where challenges fuel progress.
         </p>
         <Button
+           asLink="https://gdsc.community.dev/university-of-ibadan/"
           variant="primary"
           className="w-[144px] h-14 font-medium inline-block mt-4"
         >
