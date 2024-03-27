@@ -45,17 +45,6 @@ export default function Page() {
           session at a time!
         </p>
       </Section>
-      <Section content="What do  we do?" heading="previous study jams">
-        <p>
-          Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
-          enim nibh ac neque viverra. Scelerisque neque elit tempus metus
-          interdum luctus eget eu. Senectus lorem nec habitasse libero senectus
-          proin velit. Dis aliquam convallis donec adipiscing pulvinar enim duis
-          fermentum volutpat.
-        </p>
-        <CardsView />
-        <Button className="inline-block uppercase">See more</Button>
-      </Section>
       <main className="text-center bg-lightblue py-20 flex-col space-y-10 px-8 md:px-[7.5rem]">
         <div className="space-y-5">
           <h1>Meet our Team Leads</h1>
@@ -67,32 +56,5 @@ export default function Page() {
         <ListLeads />
       </main>
     </div>
-  )
-}
-
-function Card() {
-  return (
-    <div className="text-left">
-      <div className="bg-lightgrey h-72"></div>
-      <div className="px-5 py-10 space-y-5 border">
-        <h3 className="text-black">Study Jams</h3>
-        <p className="text-grey">
-          Lorem ipsum dolor sit amet consectetur. Egestas turpis integer et sit
-          enim nibh ac neque viverra. Scelerisque neque elit tempus metus
-          interdum luctus eget eu.
-        </p>
-        <p>Read more</p>
-      </div>
-    </div>
-  )
-}
-
-function CardsView() {
-  return (
-    <main className="grid grid-cols-1 gap-10 md:grid-cols-2">
-      {[1, 2, 3, 4].map((num) => (
-        <Card key={num} />
-      ))}
-    </main>
   )
 }
