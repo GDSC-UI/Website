@@ -1,5 +1,6 @@
-import Button from "@/components/ui/Button";
-import { RotatedImage } from "@/components/ui/rotated-image";
+import Button from "@/components/ui/Button"
+import { RotatedImage } from "@/components/ui/rotated-image"
+import imageSrc from "public/home-hero.jpg"
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
           curiosity ignites knowledge, and where challenges fuel progress.
         </p>
         <Button
-           asLink="https://gdsc.community.dev/university-of-ibadan/"
+          asLink="https://gdsc.community.dev/university-of-ibadan/"
           variant="primary"
           className="w-[144px] h-14 font-medium inline-block mt-4"
         >
@@ -22,10 +23,10 @@ const Hero = () => {
         </Button>
       </div>
       <div className="isolate">
-        <RotatedImage />
+        <RotatedImage src={imageSrc} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

@@ -6,6 +6,7 @@ import { PanelView } from "./panel-view"
 import { Gallery } from "@/components/ui/gallery"
 import { MyImage } from "@/components/ui/image"
 import backdropSrc from "./techquest-images/backdrop.jpg"
+import imageSrc from "./tech-quest.jpg"
 
 export const metadata = {
   title: `Tech Quest`,
@@ -14,7 +15,11 @@ export const metadata = {
 export default function Page() {
   return (
     <div>
-      <FlexContainer heading="Tech Quest" period="4th November, 2023">
+      <FlexContainer
+        heading="Tech Quest"
+        period="4th November, 2023"
+        src={imageSrc}
+      >
         <p>
           TechQuest was a one-day event meticulously crafted to assist newbies
           and tech enthusiasts in discovering their ideal tech journey based on

@@ -1,8 +1,8 @@
 import Button from "@/components/ui/Button"
 import { FlexContainer } from "@/components/ui/flex-container"
 import { Section } from "@/components/ui/section"
-import { cn } from "@/lib/utils"
 import clsx from "clsx"
+import imageSrc from "./next-hack.jpg"
 
 export const metadata = {
   title: `Next Hack`,
@@ -11,7 +11,11 @@ export const metadata = {
 export default function Page() {
   return (
     <div>
-      <FlexContainer heading="nexTech hack" period={new Date().toDateString()}>
+      <FlexContainer
+        heading="nexTech hack"
+        period="4th November, 2023"
+        src={imageSrc}
+      >
         <p className="text-grey text-pretty">
           NexTech Hack is a groundbreaking hackathon hosted by the Google
           Developer Student Club (GDSC) at the University of Ibadan. It is a
