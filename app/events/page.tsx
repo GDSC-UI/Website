@@ -2,6 +2,7 @@ import Button from "@/components/ui/Button"
 import { HeroImage } from "@/components/ui/hero-image"
 import { Section } from "@/components/ui/section"
 import { PastEvents } from "./events"
+import { PhotosGrid } from "./photos-grid"
 
 export const metadata = {
   title: `Events`,
@@ -22,6 +23,7 @@ export default function Page() {
         <EventsCardView />
       </section>
       <PastEvents />
+      <PhotosGrid />
       <Section content="how does GDSC help?" heading="our gallery">
         <p className="text-balance">
           A picture is worth a thousand words, they say. So, why donʼt you dive
