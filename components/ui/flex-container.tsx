@@ -6,11 +6,14 @@ export function FlexContainer({
   heading,
   period,
   children,
-  src,
+  imageProp,
 }: PropsWithChildren & {
   heading: string
   period: string
-  src: StaticImageData
+  imageProp: {
+    alt: string
+    src: StaticImageData
+  }
 }) {
   return (
     <div className="flex gap-16 bg-lightblue px-8 md:px-[7.5rem] items-center justify-center max-lg:flex-wrap">
@@ -20,7 +23,7 @@ export function FlexContainer({
         {children}
       </div>
       <div className="isolate max-lg:-order-1 lg:max-w-[50%]">
-        <RotatedImage src={src} />
+        <RotatedImage imageProp={imageProp} />
       </div>
     </div>
   )
