@@ -1,13 +1,15 @@
-import Link from "next/link";
-import React from "react";
+import Link from "next/link"
+import React, { ButtonHTMLAttributes, ComponentPropsWithRef } from "react"
 
 interface Props {
-  children?: React.ReactNode;
-  className?: string;
-  variant?: "default" | "primary" | "transparent" | "filter"| "outline";
-  isLoading?: boolean;
-  asLink?: string;
-  onClick?: () => void;
+  children?: React.ReactNode
+  className?: string
+  variant?: "default" | "primary" | "transparent" | "filter" | "outline"
+  isLoading?: boolean
+  asLink?: string
+  type?: "button" | "submit" | "reset"
+
+  onClick?: () => void
 }
 
 const Button = React.forwardRef(
@@ -17,9 +19,10 @@ const Button = React.forwardRef(
       asLink,
       className,
       variant = "primary",
+      type,
       isLoading,
       ...rest
-    }: Props,
+    }: Props & ComponentPropsWithRef<"button">,
     ref: any
   ) => {
     const variants = {
@@ -31,7 +34,7 @@ const Button = React.forwardRef(
       outline: "px-4 py-2 border border-blue text-blue",
       filter:
         "px-4 py-2 md:py-2 bg-transparent hover:bg-blue-primary hover:text-white font-bold active:bg-blue-active text-primary-100 text-opacity-50  rounded-lg block",
-    };
+    }
 
     return (
       <>
@@ -48,6 +51,7 @@ const Button = React.forwardRef(
         ) : (
           <button
             ref={ref}
+            type={type}
             className={` appearance-none  text-sm 2xl:text-lg disabled:opacity-50 text-center active:opacity-80 transition-all duration-300 ${className} ${variants[variant]}`}
             {...rest}
           >
@@ -55,9 +59,9 @@ const Button = React.forwardRef(
           </button>
         )}
       </>
-    );
+    )
   }
-);
-Button.displayName = "Button";
+)
+Button.displayName = "Button"
 
-export default Button;
+export default Button
