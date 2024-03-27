@@ -140,3 +140,14 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+@layer utilities {
+
+  .rotated-image-wrapper::before,
+  .rotated-image-wrapper::after {
+    content: '';
+    background-image: inherit;
+    background-size: cover;
+  }
+
+}
