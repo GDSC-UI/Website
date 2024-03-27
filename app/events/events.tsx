@@ -11,7 +11,7 @@ import {
 
 export function PastEvents() {
   return (
-    <aside className="bg-lightblue py-20 px-8 md:px-[7.5rem] space-y-10">
+    <article className="bg-lightblue py-20 px-8 md:px-[7.5rem] space-y-10">
       <div className="space-y-5">
         <h2>Directory of Past Events</h2>
         <header className="bg-white p-5 flex max-sm:justify-start max-sm:gap-4 justify-evenly items-center flex-wrap md:flex-nowrap">
@@ -31,7 +31,7 @@ export function PastEvents() {
       <main>
         <PastEventCardsView />
       </main>
-    </aside>
+    </article>
   )
 }
 
