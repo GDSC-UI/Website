@@ -14,7 +14,7 @@ export default function Page() {
       <FlexContainer
         heading="nexTech hack"
         period="4th November, 2023"
-        src={imageSrc}
+        imageProp={{ src: imageSrc, alt: `NexTech hack photo` }}
       >
         <p className="text-grey text-pretty">
           NexTech Hack is a groundbreaking hackathon hosted by the Google

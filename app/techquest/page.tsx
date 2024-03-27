@@ -18,7 +18,10 @@ export default function Page() {
       <FlexContainer
         heading="Tech Quest"
         period="4th November, 2023"
-        src={imageSrc}
+        imageProp={{
+          alt: `snapshot of two of the volunteers of TechQuest`,
+          src: imageSrc,
+        }}
       >
         <p>
           TechQuest was a one-day event meticulously crafted to assist newbies

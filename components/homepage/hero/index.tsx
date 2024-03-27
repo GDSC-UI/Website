@@ -23,7 +23,12 @@ const Hero = () => {
         </Button>
       </div>
       <div className="isolate">
-        <RotatedImage src={imageSrc} />
+        <RotatedImage
+          imageProp={{
+            src: imageSrc,
+            alt: `Photo of one of the GDSCUI leads  at the techquest event`,
+          }}
+        />
       </div>
     </div>
   )

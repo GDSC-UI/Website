@@ -14,7 +14,7 @@ export default function Page() {
       <FlexContainer
         heading="study jam sessions"
         period="Weekly"
-        src={imageSrc}
+        imageProp={{ alt: `photo of one  of the study jams`, src: imageSrc }}
       >
         <p className="text-grey">
           Our study jam sessions are community-run study groups for developers.
