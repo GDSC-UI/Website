@@ -11,8 +11,7 @@ const contactData = [
   {
     icon: Location,
     text: `University of Ibadan`,
-    link: `University of Ibadan
-    https://maps.app.goo.gl/jMegcEfVzgceXE9D8`,
+    link: `https://maps.app.goo.gl/jMegcEfVzgceXE9D8`,
   },
   {
     icon: Mail,
