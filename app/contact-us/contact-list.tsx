@@ -17,7 +17,7 @@ const contactData = [
   {
     icon: Mail,
     text: `dsc.unibadan@gmail.com`,
-    link: `mailto:hello@gdscui.com`,
+    link: `mailto:dsc.unibadan@gmail.com`,
   },
 ]
 
