@@ -11,11 +11,12 @@ const contactData = [
   {
     icon: Location,
     text: `University of Ibadan`,
-    link: ``,
+    link: `University of Ibadan
+    https://maps.app.goo.gl/jMegcEfVzgceXE9D8`,
   },
   {
     icon: Mail,
-    text: `gdsc2024@gmail.com`,
+    text: `dsc.unibadan@gmail.com`,
     link: `mailto:hello@gdscui.com`,
   },
 ]
