@@ -60,6 +60,14 @@ export default function RootLayout({
           sizes="16x16"
           href="favicon/favicon-16x16.png"
         />
+        <meta property="og:image" content="gdsc-hero.jpg" />
+        <meta property="og:image:type" content="jpg>" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="320" />
+        <meta name="twitter:image" content="gdsc-hero.jpg" />
+        <meta name="twitter:image:type" content="jpg" />
+        <meta name="twitter:image:width" content="1200" />
+        <meta name="twitter:image:height" content="320" />
       </head>
       <body className={ProductSans.className}>
         <Header />
