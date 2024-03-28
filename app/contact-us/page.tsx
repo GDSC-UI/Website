@@ -1,11 +1,10 @@
-import Button from "@/components/ui/Button"
 import { Section } from "@/components/ui/section"
-import { HTMLInputTypeAttribute, PropsWithChildren } from "react"
 import fontStyle from "./font.module.css"
 import { cn } from "@/lib/utils"
 import { Socials } from "@/components/ui/socials"
 import { ContactList } from "./contact-list"
 import { HeroImage } from "@/components/ui/hero-image"
+import { ContactForm } from "./form/form"
 
 export const metadata = {
   title: `Contact  us`,
@@ -30,7 +29,7 @@ export default function Page() {
 function ContactView() {
   return (
     <main className="flex justify-center my-20 mx-8 md:mx-[7.5rem]">
-      <div className="bg-[#F1F3F4] flex justify-center rounded-[2.5rem] gap-0 flex-wrap">
+      <div className="bg-[#F1F3F4] flex justify-center rounded-[2.5rem] gap-0 flex-wrap lg:flex-nowrap">
         <ContactCard />
         <ContactForm />
       </div>
@@ -52,62 +51,5 @@ function ContactCard() {
       <ContactList />
       <Socials />
     </section>
-  )
-}
-const CLASS_NAME = `border border-[#5F6368] rounded-lg w-full`
-
-function ContactForm() {
-  return (
-    <form className="pt-[7.5rem] pb-[4.75rem] px-8 md:px-20 rounded-e-[2.5rem] space-y-10">
-      <LabelInput>your full name</LabelInput>
-      <div className="flex gap-10">
-        <LabelInput type="email">email</LabelInput>
-        <LabelInput type="tel">phone</LabelInput>
-      </div>
-      <LabelTextarea>message</LabelTextarea>
-      <div className="text-right">
-        <Button className="inline-block">Send Message</Button>
-      </div>
-    </form>
-  )
-}
-
-function Label({
-  label,
-  children,
-}: Required<PropsWithChildren<{ label: string }>>) {
-  return (
-    <label className="space-y-2 [&>*]:bg-transparent block">
-      <p className="capitalize">{label}</p>
-      {children}
-    </label>
-  )
-}
-
-function LabelInput({
-  children,
-  type,
-}: Required<PropsWithChildren> & { type?: HTMLInputTypeAttribute }) {
-  return (
-    <Label label={children as string}>
-      <input
-        className={cn(
-          `p-2
-        `,
-          CLASS_NAME
-        )}
-        type={type}
-        spellCheck={false}
-        autoCapitalize="on"
-      />
-    </Label>
-  )
-}
-
-function LabelTextarea({ children }: Required<PropsWithChildren>) {
-  return (
-    <Label label={children as string}>
-      <textarea className={cn(`h-28 resize-none p-2`, CLASS_NAME)}></textarea>
-    </Label>
   )
 }
