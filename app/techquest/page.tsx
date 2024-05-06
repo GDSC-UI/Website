@@ -86,7 +86,9 @@ export default function Page() {
         <Section heading="event pictures">
           <p>Relive our inspiring experiences in pixels.</p>
           <HalfGallery />
-          <Button className="inline-block">SEE MORE</Button>
+          <div className="flex justify-center items-center">
+            <Button asLink="/gallery">SEE MORE</Button>
+          </div>
         </Section>
       </main>
     </div>

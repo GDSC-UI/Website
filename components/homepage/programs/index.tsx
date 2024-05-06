@@ -1,4 +1,4 @@
-import ProgramCard from "@/components/ui/ProgramCard";
+import ProgramCard from "@/components/ui/ProgramCard"
 
 const Programmes = () => {
   return (
@@ -21,7 +21,7 @@ const Programmes = () => {
         <ProgramCard
           title="Techquest"
           image="/program-images/techquest.jpg"
-          route="/tech-quest"
+          route="/techquest"
           description="TechQuest was a one-day event meticulously crafted to assist newbies and tech enthusiasts in discovering their ideal tech journey based on their unique interests, educational backgrounds, or personal passions. Our primary mission was to unveil the captivating realm of technology"
         />
         <ProgramCard
@@ -38,7 +38,7 @@ const Programmes = () => {
         />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Programmes;
+export default Programmes
