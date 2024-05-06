@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button"
+import { JoinButton } from "@/components/ui/Button/join-button"
 import Image from "next/image"
 
 const Gallery = () => {
@@ -57,24 +58,14 @@ const Gallery = () => {
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto text-center mt-5">
-        <h4 className="max-w-xl font-bold mx-auto pt-10 text-3xl md:text-5xl">
-          Our Gallery
-        </h4>
+      <div className="max-w-3xl mx-auto text-center mt-5 space-y-8">
+        <h4 className="text-3xl md:text-5xl">Our Gallery</h4>
 
         <p className="font-normal mt-5 text-grey">
           A picture is worth a thousand words, they say. So, why don&apos;t you
           dive into our gallery to see for yourself what we do and how we do it?
         </p>
-
-        <Button
-          asLink="https://gdsc.community.dev/university-of-ibadan/"
-          variant="primary"
-          className="w-[196px] h-14 font-medium inline-block ml-6 mt-6"
-        >
-          Join GDSC UNIBAN
-        </Button>
-
+        <JoinButton />
       </div>
     </section>
   )

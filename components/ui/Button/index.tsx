@@ -1,5 +1,6 @@
+import { cn } from "@/lib/utils"
 import Link from "next/link"
-import React, { ButtonHTMLAttributes, ComponentPropsWithRef } from "react"
+import React, { ComponentPropsWithRef } from "react"
 
 interface Props {
   children?: React.ReactNode
@@ -27,8 +28,7 @@ const Button = React.forwardRef(
   ) => {
     const variants = {
       default: "px-4 py-2 md:py-2  rounded-lg  block ",
-      primary:
-        "px-4 py-2 md:py-2 bg-blue hover:bg-blue duration-100  text-white block",
+      primary: "px-6 py-4 bg-blue hover:bg-blue duration-100  text-white block",
       transparent:
         "px-4 py-2 md:py-2 bg-transparent hover:bg-blue hover:text-white border border-blue active:bg-blue-active text-blue block",
       outline: "px-4 py-2 border border-blue text-blue",
@@ -42,7 +42,11 @@ const Button = React.forwardRef(
           <Link href={asLink}>
             <button
               ref={ref}
-              className={`hover:opacity-90 appearance-none  font-bold  text-sm disabled:opacity-50 text-center active:opacity-80 transition-all duration-300 ${className} ${variants[variant]}`}
+              className={cn(
+                `hover:opacity-90 appearance-none  font-bold  text-sm disabled:opacity-50 text-center active:opacity-80 transition-all duration-300`,
+                className,
+                variants[variant]
+              )}
               {...rest}
             >
               {children}
@@ -52,7 +56,11 @@ const Button = React.forwardRef(
           <button
             ref={ref}
             type={type}
-            className={` appearance-none  text-sm 2xl:text-lg disabled:opacity-50 text-center active:opacity-80 transition-all duration-300 ${className} ${variants[variant]}`}
+            className={cn(
+              `hover:opacity-90 appearance-none  font-bold  text-sm disabled:opacity-50 text-center active:opacity-80 transition-all duration-300`,
+              className,
+              variants[variant]
+            )}
             {...rest}
           >
             <React.Fragment>{children}</React.Fragment>

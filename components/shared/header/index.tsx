@@ -6,31 +6,33 @@ import { useEffect, useRef, useState } from "react"
 import style from "./Header.module.css"
 import { usePathname } from "next/navigation"
 import { Menu } from "lucide-react"
+import { JoinButton } from "@/components/ui/Button/join-button"
 
 const Header = () => {
-  const headerRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null)
   const pathname = usePathname()
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
     setVisible(false)
-
   }, [pathname])
 
-
   useEffect(() => {
-    const handleClickOutside = (event:MouseEvent) => {
-      if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
-        setVisible(false);
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        headerRef.current &&
+        !headerRef.current.contains(event.target as Node)
+      ) {
+        setVisible(false)
       }
-    };
+    }
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener("click", handleClickOutside)
 
     return () => {
-      document.removeEventListener('click', handleClickOutside);
-    };
-  }, []);
+      document.removeEventListener("click", handleClickOutside)
+    }
+  }, [])
 
   return (
     <div className="fixed top-0 right-0 left-0 z-20">
@@ -98,14 +100,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-
-        <Button
-        asLink="https://gdsc.community.dev/university-of-ibadan/"
-          variant="primary"
-          className="w-36 md:w-[196px] h-14 font-medium inline-block"
-        >
-          Join GDSC UNIBAN
-        </Button>
+        <JoinButton />
       </header>
 
       {/**Mobile */}
@@ -132,7 +127,10 @@ const Header = () => {
               >
                 About Us
               </Link>
-              <Link href="/events" className="text-black text-2xl  font-medium hover:text-blue  transition-all duration-300">
+              <Link
+                href="/events"
+                className="text-black text-2xl  font-medium hover:text-blue  transition-all duration-300"
+              >
                 Events
               </Link>
               <Link

@@ -3,6 +3,7 @@ import { HeroImage } from "@/components/ui/hero-image"
 import { Section } from "@/components/ui/section"
 import { PastEvents } from "./events"
 import { PhotosGrid } from "./photos-grid"
+import { JoinButton } from "@/components/ui/Button/join-button"
 
 export const metadata = {
   title: `Events`,
@@ -30,7 +31,7 @@ export default function Page() {
           into our gallery to see for yourself what we do and how we do it?
         </p>
         <div className="flex flex-col items-center justify-center gap-5">
-          <Button className="">Join GDSC UNIBADAN</Button>
+          <JoinButton />
           <Button variant="outline" className="font-bold">
             See more photos
           </Button>
