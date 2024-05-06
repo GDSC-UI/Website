@@ -17,7 +17,7 @@ const programs = [
     ],
     route: "/study-jam",
     background: true,
-    image: '/programs/study-jam.jpg',
+    image: "/programs/study-jam.jpg",
   },
 
   {
@@ -29,10 +29,10 @@ const programs = [
       "Encourages Innovation and drives Creativity",
       "Career Opportunities",
     ],
-    route: "/tech-quest",
+    route: "/techquest",
     background: false,
     reverse: true,
-    image: '/programs/techquest.jpg'
+    image: "/programs/techquest.jpg",
   },
 
   {
@@ -46,7 +46,7 @@ const programs = [
     ],
     route: "/next-hack",
     background: true,
-    image: '/programs/nexthack.jpg'
+    image: "/programs/nexthack.jpg",
   },
 ]
 export default function Page() {
@@ -76,7 +76,7 @@ export default function Page() {
           />
         ))}
       </section>
-      <Gallery/>
+      <Gallery />
     </div>
   )
 }
