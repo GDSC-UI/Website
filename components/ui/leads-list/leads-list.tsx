@@ -70,7 +70,7 @@ const LEADS = [
   },
 ]
 
-export function ListLeads() {
+export function LeadsList() {
   return (
     <div>
       <FourColGrid>

@@ -1,7 +1,7 @@
 import Button from "@/components/ui/Button"
 import { FlexContainer } from "@/components/ui/flex-container"
 import { Section } from "@/components/ui/section"
-import { ListLeads } from "./leads-list"
+import { LeadsList } from "@/ui/leads-list/leads-list"
 import imageSrc from "./study-jam.jpg"
 
 export const metadata = {
@@ -53,7 +53,7 @@ export default function Page() {
             innovation, collaboration and community impact.
           </p>
         </div>
-        <ListLeads />
+        <LeadsList />
       </main>
     </div>
   )
