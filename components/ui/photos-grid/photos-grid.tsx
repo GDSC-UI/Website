@@ -1,4 +1,4 @@
-import { MyImage } from "@/components/ui/image"
+import { MyImage } from "@/ui/image"
 import imageOne from "./images/1.jpg"
 import imageTwo from "./images/2.jpg"
 import imageThree from "./images/3.jpg"

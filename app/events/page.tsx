@@ -2,7 +2,7 @@ import Button from "@/components/ui/Button"
 import { HeroImage } from "@/components/ui/hero-image"
 import { Section } from "@/components/ui/section"
 import { PastEvents } from "./events"
-import { PhotosGrid } from "./photos-grid"
+import { PhotosGrid } from "@/components/ui/photos-grid/photos-grid"
 import { JoinButton } from "@/components/ui/Button/join-button"
 
 export const metadata = {
