@@ -2,75 +2,18 @@ import Gallery from "@/components/homepage/organizers/gallery"
 import SpeakerCard from "@/components/shared/speaker"
 import { FourColGrid } from "@/components/ui/grid-container"
 import { HeroImage } from "@/components/ui/hero-image"
+import { LeadsList } from "@/ui/leads-list/leads-list"
 import { Section } from "@/components/ui/section"
 import eniolaSrc from "@/public/organizers-images/EniolaOluwa.jpg"
 import toyyibahSrc from "@/public/organizers-images/Toyyibah.jpg"
-import jenrolaSrc from "@/public/organizers-images/jenrola.jpg"
-import jesutomiSrc from "@/public/organizers-images/jesutomi.jpg"
-import matthewSrc from "@/public/organizers-images/matthew.jpg"
-import obaloluwaSrc from "@/public/organizers-images/obaloluwa.jpg"
-import olaojoSrc from "@/public/organizers-images/olaojo.jpg"
 import olapadeSrc from "@/public/organizers-images/olapade.jpg"
 import oyeroSrc from "@/public/organizers-images/oyero.jpg"
-import princeSrc from "@/public/organizers-images/prince.jpg"
-import segunSrc from "@/public/organizers-images/segun.jpg"
-import temidayoSrc from "@/public/organizers-images/temidayo.jpg"
-import umorenSrc from "@/public/organizers-images/umoren.jpg"
-import victorSrc from "@/public/organizers-images/victor.jpg"
-import williamSrc from "@/public/organizers-images/william.jpg"
 
 const ORGANIZERS = [
   { name: `Bukola Olapade`, src: olapadeSrc, title: "Community Lead" },
   { name: `EniolaOluwa Bakare`, src: eniolaSrc, title: "Community Co-lead" },
   { name: `Oyero Habibulah`, src: oyeroSrc, title: "Technical Lead" },
   { name: `Toyyibah Akinlusi`, src: toyyibahSrc, title: "Non-Technical Lead" },
-  {
-    name: `Obaloluwa Animashaun`,
-    src: obaloluwaSrc,
-    title: "Product Design(UI/UX ) Lead",
-  },
-  {
-    name: `Jenrola Odunolaoluwa`,
-    src: jenrolaSrc,
-    title: "AI Lead",
-  },
-  { name: `Jesutoni Aderibigbe`, src: jesutomiSrc, title: "Flutter Lead" },
-  { name: `Busoye Matthew`, src: matthewSrc, title: "Hardware/IOT Lead" },
-  {
-    name: `Olaojo Paul`,
-    src: olaojoSrc,
-    title: "Data Science and Engineering Lead",
-  },
-  {
-    name: `Prince Ogabi`,
-    src: princeSrc,
-    title: "Cloud Development Lead",
-  },
-  {
-    name: `Showunmi Segun`,
-    src: segunSrc,
-    title: "Frontend Development Lead",
-  },
-  {
-    name: `Temidayo Oluwaseun`,
-    src: temidayoSrc,
-    title: "Software QA Engineering Lead",
-  },
-  {
-    name: `Umoren Ememobong`,
-    src: umorenSrc,
-    title: "Data Analyst Lead",
-  },
-  {
-    name: `Victor Afia`,
-    src: victorSrc,
-    title: "Product Management Lead",
-  },
-  {
-    name: `William Oluwaseun`,
-    src: williamSrc,
-    title: "Backend Development Lead",
-  },
 ]
 
 export default function Page() {
@@ -78,9 +21,7 @@ export default function Page() {
     <section className="">
       <HeroImage />
 
-      <Section
-        heading="Developer Student Club University of Ibadan"
-      >
+      <Section heading="Developer Student Club University of Ibadan">
         <p className="text-grey text-base">
           GDSC serves as a launchpad for young developers, offering a dynamic
           platform where students can hone their skills, explore innovative
@@ -183,12 +124,14 @@ export default function Page() {
           Meet our chefs. Get to know the people behind the magic; the brains
           behind the scene.
         </p>
-
-        <FourColGrid>
-          {ORGANIZERS.map((organizer) => (
-            <SpeakerCard key={organizer.name} {...organizer} />
-          ))}
-        </FourColGrid>
+        <section>
+          <FourColGrid>
+            {ORGANIZERS.map((organizer) => (
+              <SpeakerCard key={organizer.name} {...organizer} />
+            ))}
+          </FourColGrid>
+          <LeadsList />
+        </section>
       </section>
       <Gallery />
     </section>
