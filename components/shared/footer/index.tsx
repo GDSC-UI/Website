@@ -53,10 +53,10 @@ const Footer = () => {
             <ul className="mb-2">
               <li>
                 <Link
-                  href="mailto:hello@ogdscui.com"
+                  href="mailto:dsc.unibadan@gmail.com"
                   className="text-blue normal-case  text-base  font-light block   md:text-left py-2"
                 >
-                  gdscui@gmail.com
+                  dsc.unibadan@gmail.com
                 </Link>
               </li>
             </ul>
