@@ -3,6 +3,7 @@ import { FlexContainer } from "@/components/ui/flex-container"
 import { Section } from "@/components/ui/section"
 import { LeadsList } from "@/ui/leads-list/leads-list"
 import imageSrc from "./study-jam.jpg"
+import { JoinButton } from "@/components/ui/Button/join-button"
 
 export const metadata = {
   title: `Study Jam`,
@@ -27,7 +28,7 @@ export default function Page() {
           Jams transform the daunting into the delightful, one line of code at a
           time.
         </p>
-        <Button>Join now</Button>
+        <JoinButton>Join now</JoinButton>
       </FlexContainer>
       <Section content="What do  we do?" heading="how it works?">
         <p>
