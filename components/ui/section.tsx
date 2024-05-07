@@ -13,14 +13,14 @@ export const Section = ({
 }) => (
   <section
     className={cn(
-      `space-y-8 mx-8 md:mx-[7.5rem] py-5 md:py-10 text-center`,
-      className,
+      `space-y-2 mx-8 md:mx-[7.5rem] py-5 md:py-10 text-center`,
+      className
     )}
   >
     <div className="space-y-5">
       {content && <p className="font-medium">{content}</p>}
       <h2 className="capitalize">{heading}</h2>
     </div>
-    <div className="text-grey space-y-10">{children}</div>
+    <div className="text-grey space-y-10 [&>*]:leading-normal">{children}</div>
   </section>
 )
