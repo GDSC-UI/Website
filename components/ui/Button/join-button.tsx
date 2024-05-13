@@ -1,6 +1,6 @@
 import Button from "."
 
-export function JoinButton({ children }: { children: string }) {
+export function JoinButton({ children }: { children?: string }) {
   return (
     <a
       href="https://gdsc.community.dev/university-of-ibadan/"
