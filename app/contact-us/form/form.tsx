@@ -38,7 +38,7 @@ export function ContactForm() {
             <Button
               variant="outline"
               onClick={() => formRef.current?.requestSubmit()}
-              className="text-white !text-sm"
+              className="!text-white !text-sm"
             >
               Try again
             </Button>
