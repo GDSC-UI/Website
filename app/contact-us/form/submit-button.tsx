@@ -12,7 +12,7 @@ export function SubmitButton() {
       disabled={pending}
       className="inline-flex items-center"
     >
-      {pending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+      {pending && <Loader2 className="mr-2 h-4 w-4 animate-spin inline" />}
       Send Message
     </Button>
   )
